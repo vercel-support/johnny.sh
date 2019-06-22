@@ -2,16 +2,21 @@ import { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 const Portal = ({ children }) => {
-  const el = document.createElement('div');
+  const el =
+    typeof document !== 'undefined' ? document.createElement('div') : null;
+
   useEffect(() => {
-    const portalRoot = document.getElementById('image-portal');
+    const portalRoot =
+      typeof document !== 'undefined'
+        ? document.getElementById('image-portal')
+        : null;
     portalRoot.appendChild(el);
     return () => {
       portalRoot.removeChild(el);
     };
   }, [children, el]);
 
-  return ReactDOM.createPortal(children, el);
+  return el ? ReactDOM.createPortal(children, el) : null;
 };
 
 export default Portal;
