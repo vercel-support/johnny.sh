@@ -19,6 +19,13 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                visual {
+                  childImageSharp {
+                    resolutions(width: 400) {
+                      src
+                    }
+                  }
+                }
               }
             }
           }
@@ -37,12 +44,12 @@ exports.createPages = ({ graphql, actions }) => {
       const previous =
         index === posts.length - 1 ? null : posts[index + 1].node;
       const next = index === 0 ? null : posts[index - 1].node;
-      console.log(post.node.fields.slug);
       createPage({
         path: post.node.fields.slug,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
+          visual: post.node.frontmatter.visual,
           previous,
           next,
         },

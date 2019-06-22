@@ -4,7 +4,9 @@ import { graphql } from 'gatsby';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
-import { SmallLink } from '../components/Link';
+import { HeroImage } from '../components/Image';
+import Portal from '../components/Portal';
+import { SubtlePostLink } from '../components/Link';
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;
@@ -34,19 +36,35 @@ const BlogPostTemplate = props => {
       >
         <li>
           {previous && (
-            <SmallLink to={previous.fields.slug} rel="prev">
+            <SubtlePostLink
+              to={previous.fields.slug}
+              rel="prev"
+              imgUrl={
+                previous.frontmatter.visual.childImageSharp.resolutions.src
+              }
+            >
               ← {previous.frontmatter.title}
-            </SmallLink>
+            </SubtlePostLink>
           )}
         </li>
         <li>
           {next && (
-            <SmallLink to={next.fields.slug} rel="next">
+            <SubtlePostLink
+              to={next.fields.slug}
+              rel="next"
+              imgUrl={next.frontmatter.visual.childImageSharp.resolutions.src}
+            >
               {next.frontmatter.title} →
-            </SmallLink>
+            </SubtlePostLink>
           )}
         </li>
       </ul>
+      <Portal>
+        <HeroImage
+          fluid={post.frontmatter.visual.childImageSharp.fluid}
+          alt="A cool hero image"
+        />
+      </Portal>
     </Layout>
   );
 };
@@ -74,6 +92,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        visual {
+          childImageSharp {
+            fluid(maxWidth: 2000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

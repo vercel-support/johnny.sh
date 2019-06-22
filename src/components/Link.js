@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { black, white, transition } from './GlobalStyles';
@@ -34,5 +35,30 @@ export const SubtleLink = styled(Link)`
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: contain;
+  }
+`;
+
+const PostLinkFiltered = ({ imgUrl, ...props }) => <Link {...props} />; //eslint-disable-line
+
+export const PostLink = styled(PostLinkFiltered)`
+  color: ${black};
+  &:hover {
+    background-image: url(${props => props.imgUrl});
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+  }
+`;
+
+export const SubtlePostLink = styled(PostLinkFiltered)`
+  color: ${black};
+  font-weight: bold;
+  &:hover {
+    background-image: url(${props => props.imgUrl});
+    background-size: cover;
+    background-position: center;
+    color: ${white};
   }
 `;

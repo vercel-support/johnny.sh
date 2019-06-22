@@ -1,14 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { GlobalStyle } from './GlobalStyles';
+import { GlobalStyle, white } from './GlobalStyles';
 import { StyledLink } from './Link';
 
 const LayoutWrapper = styled.div`
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  padding: 2.625rem 1.3125rem 0;
+  flex-wrap: wrap;
+  #image-portal {
+    flex: 1;
+  }
+  footer {
+    color: white;
+    min-width: 100%;
+    flex: 1;
+    font-size: 0.8rem;
+    text-align: center;
+    height: 2.625rem;
+    line-height: 2.625rem;
+  }
+`;
+
+const LayoutInner = styled.div`
+  min-height: calc(100vh - 5.25rem);
+  background-color: ${white};
   max-width: 42rem;
-  padding: 2.625rem 1.3125rem;
+  padding: 1.4rem;
+  flex: 1;
 `;
 
 const Layout = props => {
@@ -33,8 +52,11 @@ const Layout = props => {
     <>
       <GlobalStyle />
       <LayoutWrapper>
-        <header>{header}</header>
-        <main>{children}</main>
+        <LayoutInner>
+          <header>{header}</header>
+          <main>{children}</main>
+        </LayoutInner>
+        <div id="image-portal"></div>
         <footer>© {new Date().getFullYear()} </footer>
       </LayoutWrapper>
     </>

@@ -41,13 +41,12 @@ const Bio = () => {
     }
   `);
 
-  const { author, social } = data.site.siteMetadata;
+  const { author } = data.site.siteMetadata;
   return (
     <BioOuter>
       <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
       <p>
         Personal blog by <strong>{author}</strong>.{' '}
-        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
       </p>
     </BioOuter>
   );

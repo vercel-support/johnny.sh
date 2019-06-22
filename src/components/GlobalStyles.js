@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const black = '#292929';
 export const white = '#fffbf4';
 export const pink = '#ffe5e5';
-export const powderblue = '#ade7ff';
+export const powderblue = '#CB2DBC';
+export const greyscale = ['#D8D8D8', '#C8C8C8', '#AFAFAF', '#1F1F1F'];
 
 export const transition = ({
   property = 'all',
@@ -24,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: ${black};
     -webkit-font-smoothing: antialiased;
-    background-color: ${white};
+    background-color: ${black};
     font-family: system-ui, HelveticaNeue, sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
@@ -34,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
   ::selection {
     background: ${black};
     color: ${powderblue};
+  }
+  ::-moz-selection {
+    background: ${black};
+    color: ${powderblue};    
   }
   
   article,
@@ -277,11 +282,11 @@ export const GlobalStyle = createGlobalStyle`
     margin-left: 1rem;
     margin-right: 0;
     margin-top: 0;
+    margin-bottom: 1rem;
     padding-bottom: 0;
-    padding-left: 0;
+    padding-left: 1.45rem;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1rem;
     list-style-position: outside;
     list-style-image: none;
   }
@@ -321,10 +326,12 @@ export const GlobalStyle = createGlobalStyle`
     margin-right: 1.45rem;
     margin-top: 0;
     padding-bottom: 0;
-    padding-left: 0;
+    padding-left: 10px;
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
+    font-style: italic;
+    border-left: solid 3px ${greyscale[3]};
   }
   form {
     margin-left: 0;
@@ -357,7 +364,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
   li {
-    margin-bottom: calc(1.45rem / 2);
+    margin-bottom: calc(0.1rem / 2);
   }
   ol li {
     padding-left: 0;
@@ -368,13 +375,16 @@ export const GlobalStyle = createGlobalStyle`
   li > ol {
     margin-left: 1.45rem;
     margin-bottom: calc(1.45rem / 2);
-    margin-top: calc(1.45rem / 2);
+    margin-top: 0;
+    padding-left: 0;
   }
   li > ul {
     margin-left: 1.45rem;
     margin-bottom: calc(1.45rem / 2);
-    margin-top: calc(1.45rem / 2);
+    margin-top: 0;
+    padding-left: 0;
   }
+  
   blockquote *:last-child {
     margin-bottom: 0;
   }
@@ -385,7 +395,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 0;
   }
   li > p {
-    margin-bottom: calc(1.45rem / 2);
+    margin-bottom: 0;
   }
   code {
     font-size: 0.85rem;

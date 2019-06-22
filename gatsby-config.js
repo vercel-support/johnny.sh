@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/content`,
         name: 'blog',
       },
     },
@@ -21,6 +21,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/assets`,
         name: 'assets',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/images`,
+        name: 'images',
       },
     },
     {
@@ -45,8 +52,8 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
