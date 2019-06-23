@@ -11,6 +11,8 @@ X0 was a cool little no-config wrapper around React + webpack, and made it easy 
 
 This time -- I chose [gatsby](https://www.gatsbyjs.org/). If you don't know gatsby, it's a framework around React that makes it easy to build FAST sites. It's basically a static site generator, huffed up on keyboard duster, with a lot of cool tools that make your life easier. It's also really great for making blogs.
 
+Also, if you want to see the source code for the site, I made it open source on GitHub: **[Link to repo](https://github.com/johncalvinroberts/johnny.sh)**.
+
 Anyways, outside of the technical details, I'm just going to be using this blog to document knowledge, write stories from my life in Shanghai, or share other cool stuff.
 
 Hopefully I'll write a lot more interesting things in the future.

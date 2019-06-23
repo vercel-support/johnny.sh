@@ -29,6 +29,17 @@ const About = props => {
         tech stack, but at the time of writing this, I work almost entirely with
         React and Node JS.
       </p>
+      <p>
+        You can see the source code for this website on this{' '}
+        <a
+          href="https://github.com/johncalvinroberts/johnny.sh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub repo
+        </a>{' '}
+        if you want.
+      </p>
       <h4>More stuff</h4>
       <ul>
         <li>
