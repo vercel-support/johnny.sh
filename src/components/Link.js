@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { black, white, transition } from './GlobalStyles';
-import trees from '../assets/trees.jpeg';
 
 export const StyledLink = styled(Link)`
   color: ${black};
@@ -29,12 +28,21 @@ export const SmallLink = styled(Link)`
 
 export const SubtleLink = styled(Link)`
   color: ${black};
+  ${transition({})}
+  position: relative;
+  font-weight: bold;
+  &:after {
+    content: '→';
+    opacity: 0;
+    width: 0;
+    margin-left: 3px;
+    vertical-align: middle;
+    ${transition({})}
+  }
   &:hover {
-    background-image: url(${trees});
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: contain;
+    &:after {
+      opacity: 1;
+    }
   }
 `;
 
@@ -60,5 +68,25 @@ export const SubtlePostLink = styled(PostLinkFiltered)`
     background-size: cover;
     background-position: center;
     color: ${white};
+  }
+`;
+
+export const ExternalLink = styled.a`
+  color: ${black};
+  ${transition({})}
+  position: relative;
+  font-weight: bold;
+  &:after {
+    content: '→';
+    opacity: 0;
+    width: 0;
+    margin-left: 3px;
+    vertical-align: middle;
+    ${transition({})}
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
   }
 `;

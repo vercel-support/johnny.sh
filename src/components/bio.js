@@ -1,14 +1,8 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
+import { SubtleLink } from './Link';
 
 const BioOuter = styled.div`
   display: flex;
@@ -46,7 +40,7 @@ const Bio = () => {
     <BioOuter>
       <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
       <p>
-        Personal blog by <strong>{author}</strong>.{' '}
+        Personal blog by <SubtleLink to="/about">{author}</SubtleLink>
       </p>
     </BioOuter>
   );
