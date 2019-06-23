@@ -1,25 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { GlobalStyle, white } from './GlobalStyles';
 import { StyledLink } from './Link';
 
 const LayoutWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
   padding: 2.625rem 1.3125rem 0;
-  flex-wrap: wrap;
   #image-portal {
-    flex: 1;
+    grid-column: span 1;
   }
   footer {
     color: white;
+    grid-column: span 2;
     min-width: 100%;
-    flex: 1;
     font-size: 0.8rem;
     text-align: center;
     height: 2.625rem;
     line-height: 2.625rem;
   }
+  ${media.between('medium', 'large')`
+    grid-template-columns: 1fr 1fr;
+  `}
+  ${media.lessThan('medium')`
+    grid-template-columns: 1fr;
+    #image-portal {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  `}
 `;
 
 const LayoutInner = styled.div`
@@ -27,7 +39,11 @@ const LayoutInner = styled.div`
   background-color: ${white};
   max-width: 42rem;
   padding: 1.4rem;
-  flex: 1;
+  ${media.lessThan('medium')`
+    max-width: unset;
+    width: 100%;
+    grid-row: 2;
+  `}
 `;
 
 const Layout = props => {

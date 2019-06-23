@@ -31,6 +31,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2",
+    "styled-media-query": "^2.1.2",
     "typeface-archivo-black": "0.0.72"
   },
   "devDependencies": {
