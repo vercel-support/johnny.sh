@@ -38,8 +38,10 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
-
+    const markdown = result.data.allMarkdownRemark.edges;
+    const posts = markdown.filter(md => md.node.fields.slug.includes('blog'));
+    const notes = markdown.filter(md => md.node.fields.slug.includes('notes'));
+    markdown.forEach(md => console.dir(md.node.fields.slug || 'fuuuuuuck'));
     posts.forEach((post, index) => {
       const previous =
         index === posts.length - 1 ? null : posts[index + 1].node;
