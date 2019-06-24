@@ -27,7 +27,7 @@ const About = props => {
       <p>
         As far as coding goes, I’m not emotionally attached to any particular
         tech stack, but at the time of writing this, I work almost entirely with
-        React and Node JS.
+        React and NodeJS.
       </p>
       <p>
         You can see the source code for this website on this{' '}
@@ -52,7 +52,7 @@ const About = props => {
           <SubtleLink to="/">Projects</SubtleLink>
         </li> */}
         <li>
-          <SubtleLink to="/">Notes</SubtleLink>
+          <SubtleLink to="/notes">Notes</SubtleLink>
         </li>
       </ul>
       <h4>Contact</h4>

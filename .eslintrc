@@ -27,6 +27,7 @@
     }
   },
   "globals": {
-    "__PATH_PREFIX__": true
+    "__PATH_PREFIX__": true,
+    "Promise": true
   }
 }

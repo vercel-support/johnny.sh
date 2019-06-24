@@ -1,20 +1,10 @@
-# Random useful tidbits
+# GIT COMMANDS I FORGET
 
-
-## Run chrome with CORS disabled for development purposes
-Sometimes need to turn off cors in chrome for debugging purposes.
-Exit chrome, then run this line:
-
-```
-$ open -a Google\ Chrome --args --disable-web-security --user-data-dir
-```
-Only for debugging purposes! Make sure to close chrome and restart after using this.
-
-## [vim shortcuts](https://vim.rtorr.com/)
+I honestly always forget these guys...
 
 ## Cherry Pick
 
-The best git command ever!
+One of the best git commands ever.
 ```
 $ git cherry-pick <commit hash>
 ```
@@ -57,7 +47,7 @@ $ git cherry-pick<commit hash you just copied over>
 ```
 Yea! That's it. You should be rolling now.
 
-## Fuck up your tags?
+## Fucked up your tags?
 Remove all local tags and fetch remote tags:
 
 ```
@@ -69,7 +59,7 @@ Need to delete a remote tag too?
 $ git push --delete origin tagName
 $ git tag -d tagName
 ```
-#### Fucked up your remote tags?
+## Fucked up your remote tags?
 Careful. This sucks.
 
 1. Remove all remote tags(!!! WARNING !!!)
@@ -101,41 +91,7 @@ $ git branch -d branch_name
 $ git branch -D branch_name
 ```
 The `-D` one is _with force_
-
-
-
-
-
-
-## LOAD A WEB FONT EASILY
-In a script tag in your head, you can load fonts like this:
-
-
-```
-WebFont.load({ 
-	custom: {
-     families: ['AxFFDIN', 'AxLLCircular'],
-     urls: ['/static/css/fonts.css']
-     }
-   })
-```              
-
-
-
-## NVM
- set the default:
- 
- ```
-	nvm alias default v10
-	nvm alias default 6.1.0
- ```
- 
- 
- ## Gitflow Resources
- https://devblog.dwarvesf.com/post/git-best-practices/
- https://danielkummer.github.io/git-flow-cheatsheet/
- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
- 
+          
  
 ## Match Local Branches to Remote Branches
 
@@ -153,3 +109,8 @@ $ git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d
 ```
 
 Will delete any local branches you have that are not on origin.
+
+ ## Gitflow Resources
+ https://devblog.dwarvesf.com/post/git-best-practices/
+ https://danielkummer.github.io/git-flow-cheatsheet/
+ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow

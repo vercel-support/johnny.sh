@@ -1,16 +1,15 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
+const createBlogPosts = async ({ graphql, createPage }) => {
   const blogPost = path.resolve('./src/templates/blog-post.js');
-  return graphql(
+  const result = await graphql(
     `
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
+          filter: { fileAbsolutePath: { regex: "/blog/" } }
         ) {
           edges {
             node {
@@ -32,34 +31,82 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors;
-    }
+  );
+  if (result.errors) {
+    throw result.errors;
+  }
 
-    // Create blog posts pages.
-    const markdown = result.data.allMarkdownRemark.edges;
-    const posts = markdown.filter(md => md.node.fields.slug.includes('blog'));
-    const notes = markdown.filter(md => md.node.fields.slug.includes('notes'));
-    markdown.forEach(md => console.dir(md.node.fields.slug || 'fuuuuuuck'));
-    posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          visual: post.node.frontmatter.visual,
-          previous,
-          next,
-        },
-      });
+  // Create blog posts pages.
+  const posts = result.data.allMarkdownRemark.edges;
+
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        visual: post.node.frontmatter.visual,
+        previous,
+        next,
+      },
     });
-
-    return null;
   });
+
+  return null;
+};
+
+const createNotePages = async ({ graphql, createPage }) => {
+  const notePage = path.resolve('./src/templates/note.js');
+  const result = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+          filter: { fileAbsolutePath: { regex: "/notes/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                date
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+  if (result.errors) {
+    throw result.errors;
+  }
+  const notes = result.data.allMarkdownRemark.edges;
+  notes.forEach(note => {
+    createPage({
+      path: note.node.fields.slug,
+      component: notePage,
+      context: {
+        slug: note.node.fields.slug,
+        title: note.node.fields.slug
+          .split('-')
+          .map(word => word.toUpperCase())
+          .join(' '),
+      },
+    });
+  });
+};
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  return await Promise.all([
+    createBlogPosts({ graphql, createPage }),
+    createNotePages({ graphql, createPage }),
+  ]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

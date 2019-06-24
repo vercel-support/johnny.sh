@@ -10,7 +10,7 @@ Collecting some notes on email templating & delivery, because there are some int
 * [Projects built on juice](https://github.com/Automattic/juice/blob/master/PROJECTS.md)
 
 ## Templates
-* https://github.com/leemunroe/responsive-html-email-template
+* [responsive email templates](https://github.com/leemunroe/responsive-html-email-template)
 
 ## Online quick shit
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { PostLink } from '../components/Link';
+import { SubtleLink } from '../components/Link';
 import { HeroImage } from '../components/Image';
 import Bio from '../components/Bio';
 import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const BlogIndex = props => {
+const NotesIndex = props => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
@@ -18,40 +18,39 @@ const BlogIndex = props => {
     <Layout location={props.location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <p>
+        These are my notes. General knowledge and stuff I wrote down. These
+        might not be interesting to you.
+      </p>
+      <hr />
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug;
+        const title = node.fields.slug
+          .split('/notes/')[1]
+          .split('-')
+          .map(word => word.toUpperCase())
+          .join(' ')
+          .replace('/', '');
         return (
           <div key={node.fields.slug}>
-            <h3>
-              <PostLink
-                to={node.fields.slug}
-                imgUrl={node.frontmatter.visual.childImageSharp.resolutions.src}
-              >
-                {title}
-              </PostLink>
-            </h3>
-            <small>{node.frontmatter.date}</small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
-              }}
-            />
+            <h4>
+              <SubtleLink to={node.fields.slug}>{title}</SubtleLink>
+            </h4>
           </div>
         );
       })}
       <Portal>
-        <HeroImage fluid={hero} alt="A cool hero image" />
+        <HeroImage fluid={hero} alt="Quzhou, Zhejiang, China" />
       </Portal>
     </Layout>
   );
 };
 
-BlogIndex.propTypes = {
+NotesIndex.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
 };
 
-export default BlogIndex;
+export default NotesIndex;
 
 export const pageQuery = graphql`
   query {
@@ -60,7 +59,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    hero: file(relativePath: { regex: "/spring.jpg/" }) {
+    hero: file(relativePath: { regex: "/quzhou.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -69,25 +68,13 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      filter: { fileAbsolutePath: { regex: "/notes/" } }
     ) {
       edges {
         node {
           excerpt
           fields {
             slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            visual {
-              childImageSharp {
-                resolutions(width: 400) {
-                  src
-                }
-              }
-            }
           }
         }
       }
