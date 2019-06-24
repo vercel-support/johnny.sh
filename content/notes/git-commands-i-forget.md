@@ -110,6 +110,13 @@ $ git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d
 
 Will delete any local branches you have that are not on origin.
 
+## Save headaches down the road
+
+If you're working on mac and deploying on linux, sometimes your git history doesn't actually match your file system. Run this:
+```
+$ git config core.ignorecase false   
+```
+
  ## Gitflow Resources
  https://devblog.dwarvesf.com/post/git-best-practices/
  https://danielkummer.github.io/git-flow-cheatsheet/
