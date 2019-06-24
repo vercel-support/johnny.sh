@@ -63,6 +63,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "now-build": "yum install make automake gcc gcc-c++ kernel-devel libpng-devel libjpeg-devel && npm run build"
   }
 }
