@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "johnny.sh",
+  "alias": "johnny.sh",
+  "builds": [{ "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} }]
+}
