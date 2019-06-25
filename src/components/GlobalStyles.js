@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import media from 'styled-media-query';
 
 export const black = '#292929';
 export const white = '#fffbf4';
@@ -316,9 +317,10 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.42;
     background: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
-    overflow: auto;
+    overflow: scroll;
     word-wrap: normal;
     padding: 1.45rem;
+    width: 100%;
   }
 
   blockquote {
@@ -422,10 +424,29 @@ export const GlobalStyle = createGlobalStyle`
     cursor: help;
     text-decoration: none;
   }
-
-  @media only screen and (max-width: 480px) {
+  ${media.lessThan('medium')`  
     html {
       font-size: 100%;
+      width: 100%;
     }
-  }
+    ul, ol {
+      margin-left: 0;
+      padding-left: 1rem;
+    }    
+    pre {
+      padding: 1rem;
+    }
+    blockquote {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+      li > ol {
+      margin-left: 1rem;
+      margin-bottom: calc(1.45rem / 2);
+    }
+    li > ul {
+      margin-left: 1rem;
+      margin-bottom: calc(1.45rem / 2);
+    }    
+  `}
 `;
