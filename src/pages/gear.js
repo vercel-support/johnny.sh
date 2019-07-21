@@ -121,6 +121,51 @@ const Gear = props => {
           , obviously.
         </li>
       </ul>
+      <h4>Climbing Gear</h4>
+      <ul>
+        <li>
+          <strong>Rope</strong> -{' '}
+          <a
+            href="https://shop.epictv.com/en/ropes/mammut/98-eternity-classic-2015"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mammut Eternity Classic 9.8mm
+          </a>
+        </li>
+        <li>
+          <strong>Quickdraws</strong> -{' '}
+          <a
+            href="https://www.blackdiamondequipment.com/en/climbing-carabiners-quickdraws/posiwire-quickdraw-BD381081_cfg.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            12 x Black Diamond Posiwire
+          </a>
+        </li>
+        <li>
+          <strong>Shoes</strong> -{' '}
+          <a
+            href="https://www.sportiva.com/otaki.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            La Sportiva Otaki
+          </a>
+        </li>
+        <li>
+          <strong>Helmet</strong> - seriously, stay safe. Falling rocks kill. I
+          have the{' '}
+          <a
+            href="https://www.blackdiamondequipment.com/en/climbing-helmets/vector-BD620213_cfg.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Black Diamond Vector
+          </a>
+          .
+        </li>
+      </ul>
     </Layout>
   );
 };
