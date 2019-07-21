@@ -40,9 +40,9 @@ const LayoutInner = styled.div`
   max-width: 42rem;
   padding: 1.4rem;
   ${media.lessThan('medium')`
-    max-width: calc(100vw - 2.8rem);
     width: 100%;
     grid-row: 2;
+    max-width: unset;
   `}
 `;
 
