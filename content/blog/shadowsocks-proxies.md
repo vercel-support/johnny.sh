@@ -5,7 +5,7 @@ visual: '../images/shadowsocks-cat-hehe-idk.jpg'
 description: 'A brief intro to shadowsocks proxy'
 ---
 
-In case you didn't know, the best way to get around the Great Firewall is with an obfuscated proxy like [shadowsocks](https://github.com/shadowsocks), not a VPN. Shadowsocks is amazing, the client is free and open source. You just have to bring your own server. Here are some providers/options:
+In case you didn't know, the best way to get around the Great Firewall is with an obfuscated proxy like [shadowsocks](https://github.com/shadowsocks), not a VPN. Shadowsocks is amazing, the client is free and open source. You just have to bring your own server. Here are your options...
 
 ### Self hosted / VPS
 Set up your own shadowsocks server on any VPS from a provider, preferably one with high bandwidth + fast network I/O.
@@ -24,7 +24,7 @@ Replace `YOUR_PASSWORD` with the password you want, and `ENCRYPTION_METHOD` with
 Also, you can replace `1314:1314` with whatever port you want to expose your proxy on. You might need to change this often, it's a cat and mouse game.
 
 ### Providers
-Managing your own server is cool, but it's hard to get serious performance out of it. If you need a fast daily driver, get an account with any of these providers:
+Managing your own server is cool, but it's hard to get serious performance out of it. If you need a fast daily driver, get an account with any of these specialized shadowsocks providers:
 
 * [Monocloud](https://www.monocloud.me/)
 * [shadowsocks.ch](https://home.shadowsocks.ch/)

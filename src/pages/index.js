@@ -22,7 +22,7 @@ const BlogIndex = props => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
           <div key={node.fields.slug}>
-            <h3>
+            <h3 style={{ marginBottom: '0' }}>
               <PostLink
                 to={node.fields.slug}
                 imgUrl={node.frontmatter.visual.childImageSharp.resolutions.src}
