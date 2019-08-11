@@ -7,7 +7,7 @@ description: 'How do people on the spectrum experience the Web?'
 
 I've always been very interested in learning more about how people with Autism Spectrum Disorder (ASD) experience the web, so I've decided to take what best practices I can find, and my personal observations, and put them into this post.
 
-First, a disclaimer: I'm not an expert on this topic. Just some notes about something I'm very interested in exploring.
+First, a disclaimer: I'm not an expert on this topic. Just some notes about something I'm exploring.
 
 
 ### It's a Spectrum
@@ -53,3 +53,5 @@ To be continued. I'll update this list when I find more.
 Remember that autism is not a disease, there is not a "cure", and most people would object -- vehemently -- to this notion. When designing for people with autism, be wary of [ableism](https://en.wikipedia.org/wiki/Ableism). It's about supporting neurodiversity on the web, not catering to a "disabled" population. 
 
 Again, I'm just exploring this topic for the first time...if you have any recommendations or suggestions, please get in contact with me. 
+
+_Key visual: weird panda thing in Shanghai_

@@ -435,6 +435,7 @@ export const GlobalStyle = createGlobalStyle`
     }    
     pre {
       padding: 1rem;
+      max-width: 80vw;
     }
     blockquote {
       margin-right: 1rem;

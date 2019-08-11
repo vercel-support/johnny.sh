@@ -1,8 +1,8 @@
 ---
-title: I made a new website.
+title: I made a new website
 date: "2019-06-22T22:12:03.284Z"
 visual: '../images/seaside.jpg'
-description: ''
+description: 'I rewrote my personal site'
 ---
 
 This is a new blog post, on my new personal website, which I just rewrote this weekend.
