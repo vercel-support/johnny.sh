@@ -9,11 +9,8 @@ Notes and resources for react hooks patterns.
 
 ## Libs
 
-#### Constate
-A simple lib that exports one function called `createUseContext`, which allows using local state or global state interchangeably with a hook. Push local state to global context.
-**[Link](https://github.com/diegohaz/constate)**
+* **Constate**
+A simple lib that exports one function called `createUseContext`, which allows using local state or global state interchangeably with a hook. Push local state to global context. [Link](https://github.com/diegohaz/constate)
 
-#### React Combine Provider
-Name is pretty self explanatory -- combine providers. Wouldn't actually use this lib, but can reference the single file in the lib, a reduce function which combines providers.
-
-**[Link](https://github.com/hlhr202/React-Combine-Provider)**
+* **React Combine Provider**
+Name is pretty self explanatory -- combine providers. Wouldn't actually use this lib, but can reference the single file in the lib, a reduce function which combines providers. [Link](https://github.com/hlhr202/React-Combine-Provider)
