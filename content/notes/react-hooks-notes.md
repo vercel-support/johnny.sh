@@ -3,6 +3,7 @@ Notes and resources for react hooks patterns.
 
 ## Resources
 * [use hooks](https://usehooks.com/) - collection of React hooks
+* [hooks guide](https://www.hooks.guide/) - useful stuff
 * [official API reference](https://reactjs.org/docs/hooks-reference.html)
 * [simple example](https://codesandbox.io/s/eager-hertz-bugcv) of global state management/redux pattern.
 * [async actions](https://www.sitepoint.com/replace-redux-react-hooks-context-api/) - how to replace redux with react hooks + context, including some async/data fetching examples.
