@@ -18,7 +18,6 @@ A simple lib that exports one function called `createUseContext`, which allows u
 Name is pretty self explanatory -- combine providers. Wouldn't actually use this lib, but can reference the single file in the lib, a reduce function which combines providers. [Link](https://github.com/hlhr202/React-Combine-Provider)
 
 * **react-fetching-library**
-
 An interesting lib for abtracting data fetching in react. Maybe not necessary to use, but worth referencing. Kind of like appolo client. [Link](https://marcin-piela.github.io/react-fetching-library/#/)
 
 * **React Async** - a hooks-based library which abstracts away asynchronous operations. Reference [this file](https://github.com/ghengeveld/react-async/blob/next/packages/react-async/src/useAsync.js) for a great example of async in react. [Link](https://github.com/ghengeveld/react-async)
