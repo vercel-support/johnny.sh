@@ -71,6 +71,24 @@ $ git tag -l | xargs -n 1 git push --delete origin
 $ git push <remote> --tags
 ```
 
+ 
+## Match Local Branches to Remote Branches
+
+Have a messy repo? First step towards cleaning up is to match all your local branches to the remote repo.
+
+First, fetch and prune
+
+```
+$ git fetch -p
+```
+
+Next, this thing:
+```
+$ git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d
+```
+
+Will delete any local branches you have that are not on origin.
+
 ## RESET A BRANCH TO ORIGIN
 Always forget this one smh.
 ```
@@ -92,23 +110,6 @@ $ git branch -D branch_name
 ```
 The `-D` one is _with force_
           
- 
-## Match Local Branches to Remote Branches
-
-Have a messy repo? First step towards cleaning up is to match all your local branches to the remote repo.
-
-First, fetch and prune
-
-```
-$ git fetch -p
-```
-
-Next, this thing:
-```
-$ git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d
-```
-
-Will delete any local branches you have that are not on origin.
 
 ## Save headaches down the road
 
@@ -116,8 +117,3 @@ If you're working on mac and deploying on linux, sometimes your git history does
 ```
 $ git config core.ignorecase false   
 ```
-
- ## Gitflow Resources
- https://devblog.dwarvesf.com/post/git-best-practices/
- https://danielkummer.github.io/git-flow-cheatsheet/
- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
