@@ -25,12 +25,15 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: ${black};
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: auto;
     background-color: ${black};
     font-family: system-ui, HelveticaNeue, sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
-    min-height: 100vh;    
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga","tnum","case","calt","zero","ss01","locl";    
+    font-feature-settings: "liga","tnum","case","calt","zero","ss01","locl";    
   }
 
   ::selection {
