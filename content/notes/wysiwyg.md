@@ -10,7 +10,7 @@
 * TUI-editor - pretty full featured, not very extensible and actually big bundle [link](https://nhnent.github.io/tui.editor/api/latest/tutorial-example01-basic.html)
 * [editorJS](https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42) - block-based editor
 * [medium editor](http://yabwe.github.io/medium-editor/)
-
+* [ck editor](https://github.com/ckeditor/ckeditor5)
 
 
 ### Less impressive
