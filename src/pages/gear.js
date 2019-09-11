@@ -166,6 +166,12 @@ const Gear = props => {
           .
         </li>
       </ul>
+      <h4>Other</h4>
+      <ul>
+        <li>
+          <strong>Camera</strong> - Minolta X707
+        </li>
+      </ul>
     </Layout>
   );
 };
