@@ -117,3 +117,11 @@ If you're working on mac and deploying on linux, sometimes your git history does
 ```
 $ git config core.ignorecase false   
 ```
+
+## Remove a file from history
+Sensitive file in your history? 
+```
+$ git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch path_to_file" HEAD
+```
+
+Warning: will delete the file from your local FS.
