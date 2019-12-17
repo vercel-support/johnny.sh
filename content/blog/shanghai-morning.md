@@ -1,7 +1,7 @@
 ---
 title: Shanghai Morning
 date: "2019-11-16T15:24:00.603Z"
-visual: '../images/shanghai-mroning.jpg'
+visual: '../images/shanghai-morning.jpg'
 description: 'Good morning'
 ---
 
