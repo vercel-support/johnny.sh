@@ -11,6 +11,10 @@ const LayoutWrapper = styled.div`
   grid-template-rows: auto;
   padding: 2.625rem 1.3125rem 0;
   #image-portal {
+    position: fixed;
+    right: 2.625rem;
+    top: 2.625rem;
+    width: calc(50% - 2.65rem);
     grid-column: span 1;
   }
   footer {
