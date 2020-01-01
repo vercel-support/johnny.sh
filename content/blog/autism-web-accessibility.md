@@ -11,7 +11,7 @@ First, a disclaimer: I'm not an expert on this topic. Just some notes about some
 
 
 ### It's a Spectrum
-Maybe you personally know someone with ASD. However, if you've spent time with a wide variety of people with Autism, or you talk to experts in the field, then you would know that Autism is called a **spectrum** for a reason. The behaviorial and developmental disabilities (and skills) of each individual with ASD could vary greatly -- you could say that each individual on the spectrum experiences the disorder in a completely unique way. Each one is different, and each might process information differently as well. 
+Maybe you personally know someone with ASD. However, if you've spent time with a wide variety of people with Autism, or you talk to experts in the field, then you would know that Autism is called a **spectrum** for a reason. The behavioral and developmental disabilities (and skills) of each individual with ASD could vary greatly -- you could say that each individual on the spectrum experiences the disorder in a completely unique way. Each one is different, and each might process information differently as well. 
 
 Due to this variation in the way that the disorder manifests itself, this creates a unique problem space in designing the web for people on the spectrum. It's completely different from visual or hearing impaired accessibility, and the solutions for accessibility are therefore less straightforward.
 
@@ -50,7 +50,7 @@ To be continued. I'll update this list when I find more.
 
 
 ### In conclusion...
-Remember that autism is not a disease, there is not a "cure", and most people would object -- vehemently -- to this notion. When designing for people with autism, be wary of [ableism](https://en.wikipedia.org/wiki/Ableism). It's about supporting neurodiversity on the web, not catering to a "disabled" population. 
+Remember that autism is not a disease, there is not a "cure", and most people would object -- vehemently -- to this notion. When designing for people with autism, be wary of [ableism](https://en.wikipedia.org/wiki/Ableism). It's about supporting neuro-diversity on the web, not catering to a "disabled" population. 
 
 Again, I'm just exploring this topic for the first time...if you have any recommendations or suggestions, please get in contact with me. 
 

@@ -5,7 +5,7 @@ visual: '../images/mashan-cows.jpg'
 description: 'Comments on a rock climbing trip to Mashan, Guangxi, China'
 ---
 
-This past week was the Chinese National Holiday, so we had a week of holiday from 10/1-10/7 to do whatever we wanted. We've been quite into sport climbing lately, like, really into it. We've been wanting to go to to Yangshuo, a popular outdoor climbing spot in China, but it's pretty crowded this time of year, not only with climbers but also general Chinese tourists checking out the natural beauty. A few of our climbing friends mentioned a trip to a new-ish climbing location being developed near Yangshuo called Mashan. Similar pockety limestone crags on endless mounds, but without the crowds of Yangshuo. We decided to tag along for a 5 day trip.
+This past week was the Chinese National Holiday, so we had a week of holiday from 10/1-10/7 to do whatever we wanted. We've been quite into sport climbing lately, like, really into it. We've been wanting to go to to Yangshuo, a popular outdoor climbing spot in China, but it's pretty crowded this time of year, not only with climbers but also general Chinese tourists checking out the natural beauty. A few of our climbing friends mentioned a trip to a new-ish climbing location being developed near Yangshuo called Mashan. Similar pocket-y limestone crags on endless mounds, but without the crowds of Yangshuo. We decided to tag along for a 5 day trip.
 
 ## 9/30 - Day 1
 We took an early flight from Shanghai to Nanning, Guangxi. About a 3 hour flight for a reasonable price from Spring airlines.
@@ -29,7 +29,7 @@ Climbing here was pretty decent, albeit overcrowded. We stayed until the sun wen
 ## 10/2 - Day 3
 
 ### King Kong Mtn./金刚山
-For our second day of climbing, we went to the most popular crag in Mashan - [King Kong Mtn](https://www.thecrag.com/climbing/china-mainland/guangxi/area/2143383429). Tons of routes here, including a few multipitches. But **INCREDIBLY OVERCROWDED**. We spent the entire morning here, got a few climbs in, but we were kind of dissapointed. We came here to escape the crowds of Yangshuo.
+For our second day of climbing, we went to the most popular crag in Mashan - [King Kong Mtn](https://www.thecrag.com/climbing/china-mainland/guangxi/area/2143383429). Tons of routes here, including a few multi-pitches. But **INCREDIBLY OVERCROWDED**. We spent the entire morning here, got a few climbs in, but we were kind of disappointed. We came here to escape the crowds of Yangshuo.
 
 ### Goat Mtn./羊山
 In the afternoon, we headed over to a smaller crag to get away from the sun + people at King Kong. Little crag called Goat mountain. Climbing was not great -- overgrown, wild, incredibly sharp rock. It was still a blast though, and I climbed a cool 30 meter 5.10c. Only after climbing it, did I realize I had to step over literal human remains to get to the first bolt. 
