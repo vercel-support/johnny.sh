@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     }
     hero: file(relativePath: { regex: "/spring.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 2000, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }

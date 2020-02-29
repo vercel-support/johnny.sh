@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: auto;
     background-color: ${black};
     font-family: system-ui, HelveticaNeue, sans-serif;
-    line-height: 1.5;
+    line-height: 1.55;
     box-sizing: border-box;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
@@ -182,47 +182,7 @@ export const GlobalStyle = createGlobalStyle`
   button:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
-  fieldset {
-    border: 1px solid silver;
-    margin: 0 2px;
-    padding: .35em .625em .75em;
-  }
-  legend {
-    box-sizing: border-box;
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    white-space: normal;
-  }
-  textarea {
-    overflow: auto;
-  }
-  [type=checkbox],
-  [type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-  }
-  [type=number]::-webkit-inner-spin-button,
-  [type=number]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  [type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px;
-  }
-  [type=search]::-webkit-search-cancel-button,
-  [type=search]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  ::-webkit-input-placeholder {
-    color: inherit;
-    opacity: .54;
-  }
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit;
-  }
+
 
   * {
     box-sizing: inherit;
@@ -261,7 +221,8 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 1rem;
     color: inherit;
     font-weight: bold;
-    font-family: Archivo Black
+    font-family: Archivo Black;
+    line-height: 1.31;
   }
   h1 {
     font-size: 2.25rem;
@@ -317,7 +278,7 @@ export const GlobalStyle = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     font-size: 0.85rem;
-    line-height: 1.42;
+    line-height: 1.55;
     background: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
     overflow: scroll;

@@ -35,11 +35,19 @@ const LayoutWrapper = styled.div`
 `;
 
 const LayoutInner = styled.div`
-  min-height: calc(100vh - 5.25rem);
+  height: calc(100vh - 5.25rem);
   background-color: ${white};
   max-width: 42rem;
+  min-width: 42rem;
   padding: 1.4rem;
+  overflow-y: scroll;
+  ${media.lessThan('large')`
+    min-width: unset;
+  `}
   ${media.lessThan('medium')`
+    min-height: calc(100vh - 5.25rem);
+    height: unset;
+    overflow-y: initial;
     width: 100%;
     grid-row: 2;
     max-width: unset;

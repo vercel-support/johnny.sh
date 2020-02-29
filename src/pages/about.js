@@ -43,7 +43,7 @@ const About = props => {
       <h4>More stuff</h4>
       <ul>
         <li>
-          <SubtleLink to="/gear">My gear</SubtleLink>
+          <SubtleLink to="/uses">Things I Use</SubtleLink>
         </li>
         <li>
           <SubtleLink to="/talks">Talks I’ve done</SubtleLink>

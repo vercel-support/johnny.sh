@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const Gear = props => {
+const Uses = props => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
 
@@ -176,12 +176,12 @@ const Gear = props => {
   );
 };
 
-Gear.propTypes = {
+Uses.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
 };
 
-export default Gear;
+export default Uses;
 
 export const pageQuery = graphql`
   query {

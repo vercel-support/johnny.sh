@@ -15,7 +15,7 @@ const NoteTemplate = props => {
         title={note.frontmatter.title}
         description={note.frontmatter.description || note.excerpt}
       />
-      <h1>{note.frontmatter.title}</h1>
+      {note.frontmatter.title && <h1>{note.frontmatter.title}</h1>}
       <p>{note.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: note.html }} />
       <hr />
