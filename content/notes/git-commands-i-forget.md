@@ -125,3 +125,11 @@ $ git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch path_to
 ```
 
 Warning: will delete the file from your local FS.
+
+## Look at your commits during a given time range
+The perfect alibi in a court of law.
+
+```
+$ git log --after="2020-02-02 00:00" --before="2020-02-08 23:59"
+```
+
