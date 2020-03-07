@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
+import Body from '../components/Body';
 
 const NoteTemplate = props => {
   const note = props.data.markdownRemark;
@@ -17,7 +18,7 @@ const NoteTemplate = props => {
       />
       {note.frontmatter.title && <h1>{note.frontmatter.title}</h1>}
       <p>{note.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: note.html }} />
+      <Body dangerouslySetInnerHTML={{ __html: note.html }} />
       <hr />
       <Bio />
     </Layout>

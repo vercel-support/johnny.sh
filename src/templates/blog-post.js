@@ -7,6 +7,7 @@ import SEO from '../components/Seo';
 import { HeroImage } from '../components/Image';
 import Portal from '../components/Portal';
 import { SubtlePostLink } from '../components/Link';
+import Body from '../components/Body';
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;
@@ -21,7 +22,7 @@ const BlogPostTemplate = props => {
       />
       <h1>{post.frontmatter.title}</h1>
       <p>{post.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Body dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr />
       <Bio />
 

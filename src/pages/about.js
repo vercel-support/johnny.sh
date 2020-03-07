@@ -5,6 +5,7 @@ import { HeroImage } from '../components/Image';
 import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
+import Body from '../components/Body';
 import { SubtleLink } from '../components/Link';
 import CopyToClipboard from '../components/CopyToClipboard';
 
@@ -16,30 +17,32 @@ const About = props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="John Roberts - about" />
-      <h1>About John</h1>
-      <h4>Developer // based in Shanghai, China</h4>
-      <p>
-        I’m a full stack web developer located in Shanghai via Wisconsin. I’ve
-        been living and working here for over 5 years. I assume a ’make it
-        awesome or die’ mentality to product development. Outside of coding, I
-        like making beats, bouldering, and searching for delicious 煎饼.
-      </p>
-      <p>
-        As far as coding goes, I’m not emotionally attached to any particular
-        tech stack, but at the time of writing this, I work almost entirely with
-        React and NodeJS.
-      </p>
-      <p>
-        You can see the source code for this website on this{' '}
-        <a
-          href="https://github.com/johncalvinroberts/johnny.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub repo
-        </a>{' '}
-        if you want.
-      </p>
+      <Body>
+        <h1>About John</h1>
+        <h4>Developer // based in Shanghai, China</h4>
+        <p>
+          I’m a full stack web developer located in Shanghai via Wisconsin. I’ve
+          been living and working here for over 5 years. I assume a ’make it
+          awesome or die’ mentality to product development. Outside of coding, I
+          like making beats, bouldering, and searching for delicious 煎饼.
+        </p>
+        <p>
+          As far as coding goes, I’m not emotionally attached to any particular
+          tech stack, but at the time of writing this, I work almost entirely
+          with React and NodeJS.
+        </p>
+        <p>
+          You can see the source code for this website on this{' '}
+          <a
+            href="https://github.com/johncalvinroberts/johnny.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub repo
+          </a>{' '}
+          if you want.
+        </p>
+      </Body>
       <h4>More stuff</h4>
       <ul>
         <li>

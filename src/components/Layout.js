@@ -54,6 +54,14 @@ const LayoutInner = styled.div`
   `}
 `;
 
+const BigHeader = styled.h1`
+  margin-top: 0;
+`;
+
+const SmallerHeader = styled.h3`
+  margin-top: 0;
+`;
+
 const Layout = props => {
   const { location, title, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -61,15 +69,15 @@ const Layout = props => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1>
+      <BigHeader>
         <StyledLink to={'/'}>{title}</StyledLink>
-      </h1>
+      </BigHeader>
     );
   } else {
     header = (
-      <h3>
+      <SmallerHeader>
         <StyledLink to={'/'}>{title}</StyledLink>
-      </h3>
+      </SmallerHeader>
     );
   }
   return (

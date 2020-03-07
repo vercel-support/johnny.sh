@@ -76,14 +76,14 @@ export const GlobalStyle = createGlobalStyle`
   template {
     display: none;
   }
+
   a {
-    -webkit-text-decoration-skip: objects;
     text-decoration: none;
+    &:hover, &:active {
+      outline-width: none;
+    }
   }
-  a:active,
-  a:hover {
-    outline-width: 0;
-  }
+
   abbr[title] {
     border-bottom: none;
     text-decoration: underline;
@@ -213,12 +213,11 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: inherit;
     font-weight: bold;
     font-family: Archivo Black;
@@ -264,8 +263,9 @@ export const GlobalStyle = createGlobalStyle`
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
     font-weight: 400;
+    font-size: 1.1rem;
   }
 
   pre {

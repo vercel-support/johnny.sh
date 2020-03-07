@@ -55,7 +55,7 @@ export const PostLink = styled(PostLinkFiltered)`
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: cover;
+    background-size: 156%;
     background-position: center;
   }
 `;
@@ -65,7 +65,7 @@ export const SubtlePostLink = styled(PostLinkFiltered)`
   font-weight: bold;
   &:hover {
     background-image: url(${props => props.imgUrl});
-    background-size: cover;
+    background-size: 156%;
     background-position: center;
     color: ${white};
   }
