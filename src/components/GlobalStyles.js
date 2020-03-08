@@ -38,11 +38,11 @@ export const GlobalStyle = createGlobalStyle`
 
   ::selection {
     background: ${black};
-    color: ${powderblue};
+    color: ${white};
   }
   ::-moz-selection {
     background: ${black};
-    color: ${powderblue};    
+    color: ${white};    
   }
   
   article,
