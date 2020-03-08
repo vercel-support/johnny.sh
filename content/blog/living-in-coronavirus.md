@@ -7,7 +7,7 @@ description: 'My hot tips for surviving the Covid-19 outbreak'
 
 At the time of writing this, I have already endured about six weeks of complete coronavirus lockdown while living in Shanghai. The outbreak here has been taken **very seriously**, and we have altered our lifestyle accordingly. Although the outbreak has been well-contained in Shanghai with relatively few cases, several confirmed cases were found right down the street from my apartment -- literally just outside my front door.
 
-In other words, the chance of being infected with Covid-19 is a very real threat in my life. That being said, at the time of writing this, the virus is just taking hold back home in the USA. With absolutely no bias towards the USA or China, I can say with little hesitation that the USA is not as uniquely equipped to deal with a deadly virus outbreak as Mainland China. I guess here are some advantages of that come with a communist dictatorship.
+In other words, the chance of being infected with Covid-19 is a very real threat in my life. That being said, at the time of writing this, the virus is just taking hold back home in the USA. With absolutely no bias towards the USA or China, I can say with little hesitation that the USA is not as uniquely equipped to deal with a deadly virus outbreak as Mainland China. I guess there are some advantages that come with a communist dictatorship.
 
 Anyways, that's probably a different topic, what we're really here to talk about: **Hot Tips for surving Covid-19**.
 
