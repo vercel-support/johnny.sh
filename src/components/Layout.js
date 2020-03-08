@@ -1,9 +1,10 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import { GlobalStyle, white } from './GlobalStyles';
-import { StyledLink } from './Link';
+import { PostLink } from './Link';
 
 const LayoutWrapper = styled.div`
   display: grid;
@@ -64,19 +65,37 @@ const SmallerHeader = styled.h3`
 
 const Layout = props => {
   const { location, title, children } = props;
+
+  const data = useStaticQuery(graphql`
+    query {
+      hero: file(absolutePath: { regex: "/spring.jpg/" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, maxHeight: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   const rootPath = `${__PATH_PREFIX__}/`;
+
   let header;
 
   if (location.pathname === rootPath) {
     header = (
       <BigHeader>
-        <StyledLink to={'/'}>{title}</StyledLink>
+        <PostLink to={'/'} imgUrl={data.hero.childImageSharp.fluid.src}>
+          {title}
+        </PostLink>
       </BigHeader>
     );
   } else {
     header = (
       <SmallerHeader>
-        <StyledLink to={'/'}>{title}</StyledLink>
+        <PostLink to={'/'} imgUrl={data.hero.childImageSharp.fluid.src}>
+          {title}
+        </PostLink>
       </SmallerHeader>
     );
   }

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { black, white, transition } from './GlobalStyles';
 
-export const StyledLink = styled(Link)`
+export const SwankyLink = styled(Link)`
   color: ${black};
   padding: 0.2rem;
   ${transition({})}
