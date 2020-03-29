@@ -130,4 +130,4 @@ Also -- this is a great way to get at the root of the problem, rather than imple
 
 Happy bisecting!
 
-_Key visual: Artists depiction of a bug in git history_
+_Key visual: Artist's depiction of a bug in git history_
