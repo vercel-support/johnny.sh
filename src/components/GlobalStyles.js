@@ -129,7 +129,6 @@ export const GlobalStyle = createGlobalStyle`
   pre,
   samp {
     font-family: monospace, monospace;
-    font-size: 1em;
   }
   figure {
     margin: 1em 40px;
