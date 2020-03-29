@@ -64,7 +64,7 @@ Any branch, tag, or hash that we know is working without the bug can be used her
 $ git bisect good v3.0.0 # v3.0.0 is known to be good
 ```
 
-We the following in our terminal output:
+We see the following in our terminal output:
 ```bash
 Bisecting: 39 revisions left to test after this (roughly 5 steps)
 [c13639d47be094bb521dde8bd8c2100646177230] scaffold bespoke dogbones on demand
