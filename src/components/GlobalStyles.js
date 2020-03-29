@@ -363,7 +363,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 0;
   }
   code {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.45rem;
   }
   kbd {
