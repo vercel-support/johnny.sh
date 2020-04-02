@@ -70,5 +70,12 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        trackingUrl: 'fathom.johnny.sh',
+        siteId: 'SJLCP',
+      },
+    },
   ],
 };
