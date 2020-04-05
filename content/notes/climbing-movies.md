@@ -6,3 +6,6 @@
 * [ROTPUNKT](https://www.youtube.com/watch?v=SbWvFjUIt5k)
 * [Sawanobori](https://www.youtube.com/watch?v=-yNS7EF7LGI)
 * [Rampage](https://www.youtube.com/watch?v=Cqe_w2JTlKM)
+* [The Pathan Project](https://www.youtube.com/watch?v=jCjGFiftth0)
+* [Mountain of Storms](https://www.youtube.com/watch?v=YxM2cOvq6s8)
+* [Meru](https://www.imdb.com/title/tt2545428/)
