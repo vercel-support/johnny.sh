@@ -365,6 +365,7 @@ export const GlobalStyle = createGlobalStyle`
   code {
     font-size: 1rem;
     line-height: 1.45rem;
+    word-break: break-all;
   }
   kbd {
     font-size: 0.85rem;
