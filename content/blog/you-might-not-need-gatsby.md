@@ -16,6 +16,7 @@ In short bullet point format:
 * Loss of some SPA/History API features, such as embedded routes. Gatsby is closer in design to traditional SSG, and kind of locked to 1 component <-> 1 URL route.
 * [Sharp](https://github.com/lovell/sharp) dependency is huge and always breaks
 * Opinionated plugin ecosystem -- unnecessary wrapper/obfuscation of existing APIs. For example, I can't just use `styled-components`, I have to use `gatsby-plugin-styled-components`.
+* Architecture, code splitting, etc. for the most part have to be done "the Gatsby way".
 
 **Note**: As a reminder, the goal in using a SSG like Gatsby is to create fast, static, SEO-friendly pages. That's a gross oversimplification, yes. But basically: we want to send meaningful HTML content over the line when users visit our site, rather than just sending the `<div id="app"></div>`.
 
@@ -23,7 +24,7 @@ In short bullet point format:
 
 So -- are the above headaches a price worth paying for creating static pages with React? 
 
-For small projects, Gatsby is probably not worth the headaches. Can't I just write Plain Old React without having to conform to the Gatsby way? And get a static site out of it? How?
+For small projects, Gatsby is probably not worth the headaches. Can't I just write Plain Old React without having to conform to "the Gatsby way"? And get a static site out of it? How?
 
 ### Static Generation
 
@@ -53,11 +54,11 @@ Also, this all works for Preact just the same.
 $ npx sssrpbp --name=some-micro-project --template=preact
 ```
 
-This will create a react app using react-snap and parcel, with my personal picks for prettier and eslint setup. It's probably more of a personal preference tool here, not a "framework". Regardless, the key ingredients are there and could be a starting point. 
+This will create a react app set up to use react-snap and parcel, with my personal picks for prettier and eslint setup. It's probably more of a personal preference tool here, not a "framework". Regardless, the key ingredients are there and could be a starting point. 
 
 Some more code links where I'm using this alternative to Gatsby:
 * [`sssrpbp`](https://github.com/johncalvinroberts/sssrpbp) -- the above mentioned scaffolding tool/boilerplate.
-* [pprmnt](https://github.com/johncalvinroberts/pprmnt) / [pprmnt.cc](https://pprmnt.cc)
+* [pprmnt](https://github.com/johncalvinroberts/pprmnt) -- an app built using this setup, including offline support.
 * [damachabeats](https://github.com/johncalvinroberts/damacha) -- another app using this setup.
 
 ### Conclusion
