@@ -7,7 +7,7 @@ description: 'A simpler static stack'
 
 First of all, disclaimer: I love [Gatbsy](https://www.gatsbyjs.org/). This framework has completely changed the way I think about both Static Site Generators(SSG) and React. It has sent shockwaves through the frontend community, and showed us the true potential of the so-called "JAMstack". This website is even built with Gatsby!
 
-Okay ,done with disclaimer, time to complain. There are some serious issues with Gatsby, the new popular kid in React, Frontend, and SSG worlds.
+Okay, done with disclaimer, time to complain. There are some serious issues with Gatsby, the new popular kid in React, Frontend, and SSG worlds.
 
 ## What could possibly be wrong with Gatsby?
 In short bullet point format:
