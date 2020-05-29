@@ -7,7 +7,7 @@ description: 'A simpler static stack'
 
 First of all, disclaimer: I love [Gatbsy](https://www.gatsbyjs.org/). This framework has completely changed the way I think about both Static Site Generators(SSG) and React. It has sent shockwaves through the frontend community, and showed us the true potential of the so-called "JAMstack". This website is even built with Gatsby!
 
-Okay, done with disclaimer, time to complain. There are some serious issues with Gatsby, the new popular kid in React, Frontend, and SSG worlds.
+Okay, done with disclaimer, time to complain. Let's check out some serious issues with Gatsby, the new popular kid in React, Frontend, and SSG worlds.
 
 ## What could possibly be wrong with Gatsby?
 In short bullet point format:
@@ -30,13 +30,13 @@ For small projects, Gatsby is probably not worth the headaches. Can't I just wri
 
 The answer is prerendering.
 
-So, once again, I went down the [prerendering](https://prerender.johnny.sh/) rabbit hole, my old nemesis. I think of prerendering as a life hack -- turn your client rendered app into a static site, for free. Again, gross oversimplification.
+Once again, I went down the [prerendering](https://prerender.johnny.sh/) rabbit hole, my old nemesis. I think of prerendering as a life hack -- turn your client rendered app into a static site, for free. Again, gross oversimplification.
 
 This time, I came back from the rabbit hole with [react-snap](https://github.com/stereobooster/react-snap). In my experience, this library works a lot better than the popular [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin). It also doesn't rely on Webpack, and supports inline critical css! 
 
 ### Offline Support
 
-Do you really need `gatsby-plugin-offline` to make your site work offline? Instead of learning it "the Gatsby way", you can instead spend that cognitive investment in vanilla Service Worker API, and get something more configurable. You also get universally applicable knowledge this way, not Gatsby specific knowledge.
+Do you _really_ need `gatsby-plugin-offline` to make your site work offline? Instead of learning it "the Gatsby way", you can instead spend that cognitive investment on the vanilla Service Worker API, and get something more configurable. You also get universally applicable knowledge this way, not Gatsby specific knowledge.
 
 The configuration and usage is equally complex as setting up offline support for Gatsby, in my experience. Check the [MDN Docs on Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
 
@@ -67,4 +67,4 @@ These are just my personal ramblings on the topic of static React, and I found w
 
 No other comments on this topic.
 
-_Key visual: a photo I took the other night on my bike. Not react related, at all._
+_Key visual: a photo I took the other night on my bike. Not related to React, at all._
