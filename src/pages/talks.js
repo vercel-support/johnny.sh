@@ -32,7 +32,7 @@ const TalkItem = styled.div`
   }
 `;
 
-const About = props => {
+const About = (props) => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
 
@@ -76,6 +76,18 @@ const About = props => {
           </ExternalLink>
         </h3>
         <p>The Wepy WeChat mini program framework</p>
+      </TalkItem>
+      <TalkItem>
+        <h3>
+          <ExternalLink
+            href="https://wasm-talk.johnny.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Web Assembly for Dumb People
+          </ExternalLink>
+        </h3>
+        <p>A practical approach to Web Assembly, including two demos</p>
       </TalkItem>
     </Layout>
   );
