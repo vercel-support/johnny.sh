@@ -41,44 +41,8 @@ const About = (props) => {
       <SEO title="John Roberts - about" />
       <h1>Talks</h1>
       <p>Slides from some talks I’ve done. </p>
-      <TalkItem>
-        <h3>
-          <ExternalLink
-            href="https://prerender.johnny.sh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Prerendering
-          </ExternalLink>
-        </h3>
-        <p>Static prerendering single page apps</p>
-      </TalkItem>
-      <TalkItem>
-        <h3>
-          <ExternalLink
-            href="https://mpvue.johnny.sh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            MpVue
-          </ExternalLink>
-        </h3>
-        <p>My experiments building WeChat mini programs with Vue.js</p>
-      </TalkItem>
-      <TalkItem>
-        <h3>
-          <ExternalLink
-            href="https://wepy.johnny.sh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            On Wepy
-          </ExternalLink>
-        </h3>
-        <p>The Wepy WeChat mini program framework</p>
-      </TalkItem>
-      <TalkItem>
-        <h3>
+      <ul>
+        <li>
           <ExternalLink
             href="https://wasm-talk.johnny.sh/"
             target="_blank"
@@ -86,9 +50,35 @@ const About = (props) => {
           >
             Web Assembly for Dumb People
           </ExternalLink>
-        </h3>
-        <p>A practical approach to Web Assembly, including two demos</p>
-      </TalkItem>
+        </li>
+        <li>
+          <ExternalLink
+            href="https://prerender.johnny.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Prerendering
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink
+            href="https://mpvue.johnny.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MpVue
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink
+            href="https://wepy.johnny.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            On Wepy
+          </ExternalLink>
+        </li>
+      </ul>
     </Layout>
   );
 };
