@@ -68,6 +68,16 @@ const Uses = (props) => {
           </ExternalLink>{' '}
           works fine.
         </li>
+        <li>
+          For more info, you can check my{' '}
+          <ExternalLink
+            href="https://github.com/johncalvinroberts/dotfiles"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            dotfiles
+          </ExternalLink>
+        </li>
       </ul>
       <h4>Music gear</h4>
       <ul>
