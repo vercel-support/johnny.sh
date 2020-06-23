@@ -11,7 +11,7 @@
 * [editorJS](https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42) - block-based editor
 * [medium editor](http://yabwe.github.io/medium-editor/)
 * [ck editor](https://github.com/ckeditor/ckeditor5)
-
+* [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) - idk, maybe good?
 
 ### Less impressive
 * Prosemirror - simple. [link](https://github.com/ProseMirror/prosemirror)
