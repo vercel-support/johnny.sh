@@ -1,36 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import media from 'styled-media-query';
-import styled from 'styled-components';
 import { ExternalLink } from '../components/Link';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
-
-const TalkItem = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  h3 {
-    flex: 0 0 auto;
-    margin-right: 5px;
-    width: 200px;
-    text-align: right;
-    ${media.lessThan('large')`
-      margin-bottom: 0;
-      width: unset;
-      text-align: left;
-    `}
-  }
-  p {
-    flex: 1;
-    ${media.lessThan('large')`
-      flex: 0 0 100%;
-      margin-bottom: 1rem;
-    `}
-  }
-`;
 
 const About = (props) => {
   const { data } = props;
