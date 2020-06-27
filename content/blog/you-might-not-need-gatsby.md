@@ -5,7 +5,7 @@ visual: '../images/not-react-related.jpg'
 description: 'A simpler static stack'
 ---
 
-First of all, disclaimer: I love [Gatbsy](https://www.gatsbyjs.org/). This framework has completely changed the way I think about both Static Site Generators(SSG) and React. It has sent shockwaves through the frontend community, and showed us the true potential of the so-called "JAMstack". This website is even built with Gatsby!
+First of all, disclaimer: I love [Gatbsy](https://www.gatsbyjs.org/). This framework has entirely changed the way I think about both Static Site Generators(SSG) and React. It has sent shockwaves through the frontend community, and showed us the true potential of the so-called "JAMstack". This website is even built with Gatsby!
 
 Okay, done with disclaimer, time to complain. Let's check out some serious issues with Gatsby, the new popular kid in React, Frontend, and SSG worlds.
 
@@ -63,7 +63,7 @@ Some more code links where I'm using this alternative to Gatsby:
 
 ### Conclusion
 
-These are just my personal ramblings on the topic of static React, and I found what I like the best and what I'm most productive with. There's also [react-static](https://github.com/react-static/react-static), which might be worth looking into.
+These are just my personal ramblings on the topic of static React, and I found what I like the best and what I'm most productive with. There's also [react-static](https://github.com/react-static/react-static), which takes a similar (but slightly stripped down) approach as Gatsby.
 
 No other comments on this topic.
 

@@ -9,7 +9,7 @@ Last week, my girlfriend and I went on yet another epic rock climbing trip.
 
 Shigu, Yunnnan, China -- Chinese name 云南省丽江市石鼓镇
 
-For more information, checkout [climbshigu.com](http://climbshigu.com/). The hostel is owned by a british dude who has helped develop the area for climbing. Great food, as well. Delicious Yunnan coffee available every morning.
+For more information, checkout [climbshigu.com](http://climbshigu.com/). The hostel is owned by a British dude who has helped develop the area for climbing. Great food, as well. Delicious Yunnan coffee available every morning.
 
 ![breakfast in shigu](../images/shigu/shigu-breakfast.jpg)
 
