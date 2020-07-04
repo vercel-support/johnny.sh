@@ -1,7 +1,7 @@
 ---
 title: Bouldering in Bishop and Joshua Tree
 date: "2019-12-21T10:00:03.284Z"
-visual: '../images/van-in-joshua-tree.jpg'
+visual: '../images/bishop-jt/van-in-joshua-tree.jpg'
 description: 'Hashtag vanlife'
 ---
 
@@ -28,7 +28,12 @@ After Joshua Tree, we drove up to Bishop, California. Another great place for bo
 
 Another big plus of the area: most of this place is owned by the Bureau of Land Management, which means you can park and camp literally anywhere. We drove up to the area known as Buttermilks Country and parked up there. 
 
-![buttermilks parking lot in Bishop](../images/buttermilks.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/IMG_5743.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/IMG_7413.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/IMG_6028.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/IMG_7448.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/IMG_7485.jpg)
+![Bishop and Joshua Tree](../images/bishop-jt/buttermilks.jpg)
 
 The climbing here is...intense. Not as beginner friendly as Joshua Tree, which is already not-beginner-friendly at all. Most of the boulders here are considered highballs, 15-20 feet tall rocks that you hit a certain halfway point "no fall zone". We still got a lot of good climbs in.
 
