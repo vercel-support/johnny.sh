@@ -6,35 +6,33 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
 
-const NoteTemplate = (props) => {
-  const note = props.data.markdownRemark;
+const PageTemplate = (props) => {
+  const page = props.data.markdownRemark;
   const siteTitle = props.data.site.siteMetadata.title;
 
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO
-        title={note.frontmatter.title}
-        description={note.frontmatter.description || note.excerpt}
+        title={page.frontmatter.title}
+        description={page.frontmatter.description || page.excerpt}
       />
-      {note.frontmatter.title && <h1>{note.frontmatter.title}</h1>}
-      <p>{note.frontmatter.date}</p>
-      <Body dangerouslySetInnerHTML={{ __html: note.html }} />
+      <Body dangerouslySetInnerHTML={{ __html: page.html }} />
       <hr />
       <Bio />
     </Layout>
   );
 };
 
-NoteTemplate.propTypes = {
+PageTemplate.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
   pageContext: PropTypes.object.isRequired,
 };
 
-export default NoteTemplate;
+export default PageTemplate;
 
 export const pageQuery = graphql`
-  query NoteBySlug($slug: String!) {
+  query($slug: String!) {
     site {
       siteMetadata {
         title
@@ -43,11 +41,9 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
         description
       }
     }

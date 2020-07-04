@@ -9,7 +9,7 @@ import Portal from '../components/Portal';
 import { SubtlePostLink } from '../components/Link';
 import Body from '../components/Body';
 
-const BlogPostTemplate = props => {
+const BlogPostTemplate = (props) => {
   const post = props.data.markdownRemark;
   const siteTitle = props.data.site.siteMetadata.title;
   const { previous, next } = props.pageContext;

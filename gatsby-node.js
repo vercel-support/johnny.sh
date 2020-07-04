@@ -85,8 +85,10 @@ const createNotePages = async ({ graphql, createPage }) => {
   if (result.errors) {
     throw result.errors;
   }
+
   const notes = result.data.allMarkdownRemark.edges;
-  notes.forEach(note => {
+
+  notes.forEach((note) => {
     createPage({
       path: note.node.fields.slug,
       component: notePage,
@@ -94,7 +96,53 @@ const createNotePages = async ({ graphql, createPage }) => {
         slug: note.node.fields.slug,
         title: note.node.fields.slug
           .split('-')
-          .map(word => word.toUpperCase())
+          .map((word) => word.toUpperCase())
+          .join(' '),
+      },
+    });
+  });
+};
+
+const createMarkdownPages = async ({ graphql, createPage }) => {
+  const template = path.resolve('./src/templates/markdown-page.js');
+  const result = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          limit: 1000
+          filter: { fileAbsolutePath: { regex: "/markdown-pages/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                date
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+  if (result.errors) {
+    throw result.errors;
+  }
+
+  const markdownPages = result.data.allMarkdownRemark.edges;
+
+  markdownPages.forEach((page) => {
+    const slug = page.node.fields.slug.replace('/markdown-pages', '');
+    createPage({
+      path: slug,
+      component: template,
+      context: {
+        slug: page.node.fields.slug,
+        title: slug
+          .split('-')
+          .map((word) => word.toUpperCase())
           .join(' '),
       },
     });
@@ -106,6 +154,7 @@ exports.createPages = async ({ graphql, actions }) => {
   return await Promise.all([
     createBlogPosts({ graphql, createPage }),
     createNotePages({ graphql, createPage }),
+    createMarkdownPages({ graphql, createPage }),
   ]);
 };
 

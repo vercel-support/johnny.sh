@@ -8,7 +8,7 @@ import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const BlogIndex = props => {
+const BlogIndex = (props) => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;

@@ -9,7 +9,7 @@ import Body from '../components/Body';
 import { SubtleLink } from '../components/Link';
 import CopyToClipboard from '../components/CopyToClipboard';
 
-const About = props => {
+const About = (props) => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
   const hero = data.hero.childImageSharp.fluid;
