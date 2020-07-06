@@ -9,6 +9,9 @@ A collection of monorepo resources.
 - [Monorepos By Example: Part 2 – codeburst](https://codeburst.io/monorepos-by-example-part-2-4153712cfa31)
 - [Monorepos By Example: Part 3 – codeburst](https://codeburst.io/monorepos-by-example-part-3-1ebdea7ccbea)
 
+Another post w/ walkthrough
+- [Blog post with walkthrough](https://leerob.io/blog/monorepo-lerna-yarn-workspaces)
+
 ### MONOREPO + WEBPACK
 
 - [react-monorepo](https://github.com/hannadrehman/react-monorepo) - an example repo of react, webpack, and friends in a monorepo.
@@ -17,3 +20,4 @@ A collection of monorepo resources.
 - [setting up a monorepo with lerna + yarn](https://moduscreate.com/blog/setting-up-a-monorepo-react-app-with-yarn/) - yet another react monorepo example, more about using yarn workspaces.
 
 - [stack overflow question](https://stackoverflow.com/questions/46767844/how-to-properly-use-lerna-and-webpack-when-dealing-with-a-monorepo) - about setting up a monorepo with webpack, covers chunk splitting.
+
