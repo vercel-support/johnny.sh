@@ -76,8 +76,8 @@ Yeah, I know. That's it. A total of 210 RMB to get your Chinese driver's license
 
 External resources, which are all inaccurate but potentially useful:
 
-- [http://www.timeoutshanghai.com/features/Around_Town-Around_Town/41682/How-to-get-a-Chinese-driving-license.html](http://www.timeoutshanghai.com/features/Around_Town-Around_Town/41682/How-to-get-a-Chinese-driving-license.html)
-- [https://www.sjgrand.cn/get-drivers-license-china/](https://www.sjgrand.cn/get-drivers-license-china/)
-- [https://www.reddit.com/r/China/comments/9307vh/getting_a_drivers_license_2018_refresher/](https://www.reddit.com/r/China/comments/9307vh/getting_a_drivers_license_2018_refresher/)
-- [https://everydayhai.com/2018/06/06/getting-a-driving-licence-in-shanghai/](https://everydayhai.com/2018/06/06/getting-a-driving-licence-in-shanghai/)
-- [http://www.shanghaihalfpat.com/convert-to-china-driving-license/](http://www.shanghaihalfpat.com/convert-to-china-driving-license/)
+- [Timeout Shanghai](http://www.timeoutshanghai.com/features/Around_Town-Around_Town/41682/How-to-get-a-Chinese-driving-license.html)
+- [Get Drivers License in China](https://www.sjgrand.cn/get-drivers-license-china/)
+- [Reddit thread](https://www.reddit.com/r/China/comments/9307vh/getting_a_drivers_license_2018_refresher/)
+- [Getting a driving licence in Shanghai](https://everydayhai.com/2018/06/06/getting-a-driving-licence-in-shanghai/)
+- [Convert to china Driving License](http://www.shanghaihalfpat.com/convert-to-china-driving-license/)
