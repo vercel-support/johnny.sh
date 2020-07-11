@@ -7,7 +7,6 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
 import { SubtleLink } from '../components/Link';
-import CopyToClipboard from '../components/CopyToClipboard';
 
 const About = (props) => {
   const { data } = props;
@@ -59,10 +58,7 @@ const About = (props) => {
         </li>
       </ul>
       <h4>Contact</h4>
-      <p>
-        Probably best to email me:{' '}
-        <CopyToClipboard text="johnny@johnny.sh" label="johnny@johnny.sh" />
-      </p>
+      <p>Probably best to email me: johnny[@]johnny.sh</p>
       <Portal>
         <HeroImage
           fluid={hero}

@@ -52,10 +52,15 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-feed',
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+      options: {
+        preset: '@theme-ui/preset-future',
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

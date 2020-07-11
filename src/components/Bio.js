@@ -1,18 +1,8 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
-import styled from 'styled-components';
 import { SubtleLink } from './Link';
-
-const BioOuter = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  > p {
-    margin-bottom: 0;
-    margin-left: 10px;
-  }
-`;
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -37,12 +27,12 @@ const Bio = () => {
 
   const { author } = data.site.siteMetadata;
   return (
-    <BioOuter>
+    <div>
       <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
       <p>
         Personal blog by <SubtleLink to="/about">{author}</SubtleLink>
       </p>
-    </BioOuter>
+    </div>
   );
 };
 

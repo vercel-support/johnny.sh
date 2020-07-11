@@ -12,7 +12,7 @@
       "single"
     ],
     "prettier/prettier": "warn",
-    "react/prop-types": [2, { "ignore": ["children"] }],
+    "react/prop-types":"off",
     "no-unused-vars": "warn"
   },
   "extends": [
