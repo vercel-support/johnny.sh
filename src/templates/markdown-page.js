@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
@@ -18,7 +17,6 @@ const PageTemplate = (props) => {
       />
       <Body dangerouslySetInnerHTML={{ __html: page.html }} />
       <hr />
-      <Bio />
     </Layout>
   );
 };

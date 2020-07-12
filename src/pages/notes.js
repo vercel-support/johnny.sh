@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { SubtleLink } from '../components/Link';
 import { HeroImage } from '../components/Image';
-import Bio from '../components/Bio';
 import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const NotesIndex = props => {
+const NotesIndex = (props) => {
   const { data } = props;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
@@ -17,7 +16,6 @@ const NotesIndex = props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
       <p>
         These are my notes. General knowledge and stuff I wrote down. These
         might not be interesting to you.
@@ -27,7 +25,7 @@ const NotesIndex = props => {
         const title = node.fields.slug
           .split('/notes/')[1]
           .split('-')
-          .map(word => word.toUpperCase())
+          .map((word) => word.toUpperCase())
           .join(' ')
           .replace('/', '');
         return (

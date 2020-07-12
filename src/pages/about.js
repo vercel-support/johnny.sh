@@ -42,23 +42,7 @@ const About = (props) => {
           if you want.
         </p>
       </Body>
-      <h4>More stuff</h4>
-      <ul>
-        <li>
-          <SubtleLink to="/uses">Things I Use</SubtleLink>
-        </li>
-        <li>
-          <SubtleLink to="/talks">Talks I’ve done</SubtleLink>
-        </li>
-        {/* <li>
-          <SubtleLink to="/">Projects</SubtleLink>
-        </li> */}
-        <li>
-          <SubtleLink to="/notes">Notes</SubtleLink>
-        </li>
-      </ul>
-      <h4>Contact</h4>
-      <p>Probably best to email me: johnny[@]johnny.sh</p>
+      <p>If you want to get in contact, you can email me: johnny[@]johnny.sh</p>
       <Portal>
         <HeroImage
           fluid={hero}

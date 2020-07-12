@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from 'theme-ui';
-import { PostLink } from './Link';
+import { PostLink, SubtleLink } from './Link';
+import Bio from './Bio';
 
 const modes = ['default', 'dark', 'deep', 'swiss'];
 
@@ -63,14 +64,14 @@ const Layout = (props) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1>
+      <h1 sx={{ display: 'flex', alignItems: 'center' }}>
         <PostLink to={'/'}>{title}</PostLink>
         <ColorButton onClick={cycleMode}></ColorButton>
       </h1>
     );
   } else {
     header = (
-      <h3>
+      <h3 sx={{ display: 'flex', alignItems: 'center' }}>
         <PostLink to={'/'}>{title}</PostLink>
         <ColorButton onClick={cycleMode}></ColorButton>
       </h3>
@@ -85,7 +86,7 @@ const Layout = (props) => {
         gridTemplateRows: 'auto',
         padding: ['16px', '32px'],
         position: 'relative',
-        gridGap: '0 32px',
+        gridGap: ['16px', '32px'],
       }}
     >
       <div>
@@ -98,7 +99,28 @@ const Layout = (props) => {
           sx={{ position: 'sticky', top: ['16px', '32px'] }}
         ></div>
       </div>
-      <footer sx={{ padding: '20px 0' }}>© {new Date().getFullYear()} </footer>
+      <footer
+        sx={{
+          height: '200px',
+          padding: '40px 0 0',
+        }}
+      >
+        <SubtleLink to="/about" sx={{ display: 'block' }}>
+          <small>/about</small>
+        </SubtleLink>
+        <SubtleLink to="/uses" sx={{ display: 'block' }}>
+          <small>/uses</small>
+        </SubtleLink>
+        <SubtleLink to="/notes" sx={{ display: 'block' }}>
+          <small>/notes</small>
+        </SubtleLink>
+        <SubtleLink to="/talks" sx={{ display: 'block' }}>
+          <small>/talks</small>
+        </SubtleLink>
+        <small sx={{ display: 'block', marginTop: '20px' }}>
+          © {new Date().getFullYear()}{' '}
+        </small>
+      </footer>
     </div>
   );
 };

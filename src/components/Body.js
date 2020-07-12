@@ -6,6 +6,7 @@ const Body = ({ children, ...rest }) => (
     {...rest}
     sx={{
       maxWidth: '40rem',
+      minWidth: ['unset', '40rem'],
       '& a': {
         color: 'text',
         cursor: 'alias',

@@ -3,7 +3,6 @@ import { jsx, Styled } from 'theme-ui';
 import { graphql } from 'gatsby';
 import { PostLink } from '../components/Link';
 import { HeroImage } from '../components/Image';
-import Bio from '../components/Bio';
 import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
@@ -17,7 +16,7 @@ const BlogIndex = (props) => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="Johnny.sh - Web Developer in Shanghai" />
-      <Bio />
+      <hr />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (

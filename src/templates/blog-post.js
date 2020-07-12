@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import { HeroImage } from '../components/Image';
@@ -24,7 +23,6 @@ const BlogPostTemplate = (props) => {
       <p>{post.frontmatter.date}</p>
       <Body dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr />
-      <Bio />
 
       <ul
         style={{
