@@ -27,7 +27,7 @@ The first step is to get a notarized translation of your license. This needs to 
 
 ### 2. **Medical check and registration**
 
-After getting your translated license, you now head to the big headquarters of Shanghai's traffic authority — **Shanghai Public Security Bureau Traffic Police Brigade Vehicle Management Institute Yifensuo.** The name really rolls of the tongue. I just call it the Chinese DMV.
+After getting your translated license, you now head to the big headquarters of Shanghai's traffic authority — **Shanghai Public Security Bureau Traffic Police Brigade Vehicle Management Institute Yifensuo.** The name really rolls off the tongue. I just call it the Chinese DMV.
 
 It's a huge building, covering every facet of motor-vehicle-related bureaucracy. Don't stress — I found this to be (by far) the most well-managed Chinese government institute I've ever stepped foot in. The staff are all very courteous and helpful, the building is clean, and there are never long lines for the different stations (despite the long line in the morning before opening). 
 

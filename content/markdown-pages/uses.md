@@ -5,7 +5,7 @@ description: The gear I uses.
 
 # Gear I Use
 
-Honestly, it's the gear that keeps me going in this code world.
+Honestly, it's the gear that keeps me going in this cold world.
 
 #### Software Development
 
