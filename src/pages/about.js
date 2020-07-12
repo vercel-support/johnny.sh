@@ -21,7 +21,7 @@ const About = (props) => {
         <h4>Developer // based in Shanghai, China</h4>
         <p>
           I’m a full stack web developer located in Shanghai via Wisconsin. I’ve
-          been living and working here for over 5 years. I assume a ’make it
+          been living and working here for over 6 years. I assume a ’make it
           awesome or die’ mentality to product development. Outside of coding, I
           like making beats, bouldering, and searching for delicious 煎饼.
         </p>

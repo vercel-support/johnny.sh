@@ -83,7 +83,7 @@ const Layout = (props) => {
         display: 'grid',
         gridTemplateColumns: ['1fr', '1fr 1fr', 'auto 1fr'],
         gridTemplateRows: 'auto',
-        padding: '32px',
+        padding: ['16px', '32px'],
         position: 'relative',
         gridGap: '0 32px',
       }}
@@ -93,7 +93,10 @@ const Layout = (props) => {
         <main>{children}</main>
       </div>
       <div sx={{ height: '100%', gridRow: [1, 'auto'] }}>
-        <div id="image-portal" sx={{ position: 'sticky', top: '32px' }}></div>
+        <div
+          id="image-portal"
+          sx={{ position: 'sticky', top: ['16px', '32px'] }}
+        ></div>
       </div>
       <footer sx={{ padding: '20px 0' }}>© {new Date().getFullYear()} </footer>
     </div>

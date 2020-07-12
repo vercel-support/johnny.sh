@@ -120,13 +120,11 @@ export default {
       color: 'text',
       bg: 'muted',
       overflow: 'auto',
-      code: {
-        color: 'inherit',
-      },
     },
     code: {
       fontFamily: 'monospace',
       fontSize: 1,
+      color: 'inherit',
     },
     inlineCode: {
       fontFamily: 'monospace',

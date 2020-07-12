@@ -16,6 +16,21 @@ const Body = ({ children, ...rest }) => (
           backgroundColor: 'text',
         },
       },
+      '& pre': {
+        fontFamily: 'monospace',
+        fontSize: 1,
+        p: 3,
+        color: 'text',
+        bg: 'muted',
+        overflow: 'scroll',
+        maxWidth: ['calc(100vw - 32px)', 'calc(100vw - 64px)'],
+      },
+      '& code': {
+        fontFamily: 'monospace',
+        fontSize: 1,
+        color: 'inherit',
+        wordBreak: 'break-all',
+      },
     }}
   >
     {children}
