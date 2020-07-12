@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui';
 import { graphql } from 'gatsby';
 import { PostLink } from '../components/Link';
 import { HeroImage } from '../components/Image';
@@ -21,21 +21,27 @@ const BlogIndex = (props) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
-          <div key={node.fields.slug}>
-            <h3 style={{ marginBottom: '0' }}>
-              <PostLink
-                to={node.fields.slug}
-                imgUrl={node.frontmatter.visual.childImageSharp.resolutions.src}
-              >
-                {title}
-              </PostLink>
-            </h3>
+          <div
+            key={node.fields.slug}
+            sx={{
+              ':hover': {
+                backgroundImage: `url(${node.frontmatter.visual.childImageSharp.resolutions.src})`,
+                color: 'background',
+                backgroundSize: 'cover',
+                a: {
+                  color: 'background',
+                  backgroundColor: 'text',
+                },
+                small: {
+                  backgroundColor: 'text',
+                },
+              },
+            }}
+          >
+            <Styled.h3 sx={{ marginBottom: 0 }}>
+              <PostLink to={node.fields.slug}>{title}</PostLink>
+            </Styled.h3>
             <small>{node.frontmatter.date}</small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
-              }}
-            />
           </div>
         );
       })}
@@ -44,11 +50,6 @@ const BlogIndex = (props) => {
       </Portal>
     </Layout>
   );
-};
-
-BlogIndex.propTypes = {
-  data: PropTypes.object,
-  location: PropTypes.object,
 };
 
 export default BlogIndex;

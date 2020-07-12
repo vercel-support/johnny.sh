@@ -1,22 +1,61 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
+/** @jsx jsx */
+import { jsx, useColorMode } from 'theme-ui';
 import { PostLink } from './Link';
+
+const modes = ['default', 'dark', 'deep', 'swiss'];
+
+const ColorButton = (props) => (
+  <button
+    {...props}
+    title="Change color mode"
+    sx={{
+      padding: 0,
+      backgroundColor: 'transparent',
+      border: 'none',
+      marginLeft: '10px',
+      cursor: 'pointer',
+    }}
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="100" height="100" fill="#C4C4C4" />
+      <rect width="25" height="25" fill="#46C7BF" />
+      <rect width="25" height="25" fill="#46C7BF" />
+      <rect y="25" width="25" height="25" fill="#9E46C7" />
+      <rect y="50" width="25" height="25" fill="#A70000" />
+      <rect y="75" width="25" height="25" fill="#FE8C8C" />
+      <rect x="25" width="25" height="25" fill="#19B485" />
+      <rect x="25" width="25" height="25" fill="#19B485" />
+      <rect x="25" y="25" width="25" height="25" fill="#B4199B" />
+      <rect x="25" y="50" width="25" height="25" fill="#2D3748" />
+      <rect x="25" y="75" width="25" height="25" fill="#BEFE8C" />
+      <rect x="50" width="25" height="25" fill="#5046C7" />
+      <rect x="50" y="25" width="25" height="25" fill="#D6BCFA" />
+      <rect x="50" y="50" width="25" height="25" fill="white" />
+      <rect x="50" y="75" width="25" height="25" fill="#190CAF" />
+      <rect x="75" width="25" height="25" fill="#00C2C2" />
+      <rect x="75" width="25" height="25" fill="#00C2C2" />
+      <rect x="75" y="25" width="25" height="25" fill="#0037FF" />
+      <rect x="75" y="50" width="25" height="25" fill="#6C5C54" />
+      <rect x="75" y="75" width="25" height="25" fill="#C20052" />
+    </svg>
+  </button>
+);
 
 const Layout = (props) => {
   const { location, title, children } = props;
 
-  const data = useStaticQuery(graphql`
-    query {
-      hero: file(absolutePath: { regex: "/spring.jpg/" }) {
-        childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 250) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  const [mode, setMode] = useColorMode();
+  const cycleMode = () => {
+    const i = modes.indexOf(mode);
+    const n = (i + 1) % modes.length;
+    setMode(modes[n]);
+  };
 
   const rootPath = `${__PATH_PREFIX__}/`;
 
@@ -25,37 +64,40 @@ const Layout = (props) => {
   if (location.pathname === rootPath) {
     header = (
       <h1>
-        <PostLink to={'/'} imgUrl={data.hero.childImageSharp.fluid.src}>
-          {title}
-        </PostLink>
+        <PostLink to={'/'}>{title}</PostLink>
+        <ColorButton onClick={cycleMode}></ColorButton>
       </h1>
     );
   } else {
     header = (
       <h3>
-        <PostLink to={'/'} imgUrl={data.hero.childImageSharp.fluid.src}>
-          {title}
-        </PostLink>
+        <PostLink to={'/'}>{title}</PostLink>
+        <ColorButton onClick={cycleMode}></ColorButton>
       </h3>
     );
   }
-  return (
-    <>
-      <div>
-        <div>
-          <header>{header}</header>
-          <main>{children}</main>
-        </div>
-        <div id="image-portal"></div>
-        <footer>© {new Date().getFullYear()} </footer>
-      </div>
-    </>
-  );
-};
 
-Layout.propTypes = {
-  location: PropTypes.object,
-  title: PropTypes.string,
+  return (
+    <div
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: ['1fr', '1fr 1fr', 'auto 1fr'],
+        gridTemplateRows: 'auto',
+        padding: '32px',
+        position: 'relative',
+        gridGap: '0 32px',
+      }}
+    >
+      <div>
+        <header>{header}</header>
+        <main>{children}</main>
+      </div>
+      <div sx={{ height: '100%', gridRow: [1, 'auto'] }}>
+        <div id="image-portal" sx={{ position: 'sticky', top: '32px' }}></div>
+      </div>
+      <footer sx={{ padding: '20px 0' }}>© {new Date().getFullYear()} </footer>
+    </div>
+  );
 };
 
 export default Layout;

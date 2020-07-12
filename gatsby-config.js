@@ -56,12 +56,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-feed',
     {
-      resolve: 'gatsby-plugin-theme-ui',
-      options: {
-        preset: '@theme-ui/preset-future',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'John Roberts personal website',
@@ -74,6 +68,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-theme-ui',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-fathom',

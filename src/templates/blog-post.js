@@ -37,24 +37,14 @@ const BlogPostTemplate = (props) => {
       >
         <li>
           {previous && (
-            <SubtlePostLink
-              to={previous.fields.slug}
-              rel="prev"
-              imgUrl={
-                previous.frontmatter.visual.childImageSharp.resolutions.src
-              }
-            >
+            <SubtlePostLink to={previous.fields.slug} rel="prev">
               ← {previous.frontmatter.title}
             </SubtlePostLink>
           )}
         </li>
         <li>
           {next && (
-            <SubtlePostLink
-              to={next.fields.slug}
-              rel="next"
-              imgUrl={next.frontmatter.visual.childImageSharp.resolutions.src}
-            >
+            <SubtlePostLink to={next.fields.slug} rel="next">
               {next.frontmatter.title} →
             </SubtlePostLink>
           )}

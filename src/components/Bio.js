@@ -27,7 +27,7 @@ const Bio = () => {
 
   const { author } = data.site.siteMetadata;
   return (
-    <div>
+    <div sx={{ display: 'flex', justifyContent: 'flex-start' }}>
       <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
       <p>
         Personal blog by <SubtleLink to="/about">{author}</SubtleLink>
