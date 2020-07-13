@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from 'theme-ui';
 import { PostLink, SubtleLink } from './Link';
-import Bio from './Bio';
 
 const modes = ['default', 'dark', 'deep', 'swiss'];
 
