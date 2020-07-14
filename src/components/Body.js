@@ -31,6 +31,8 @@ const Body = ({ children, ...rest }) => (
         fontSize: 1,
         color: 'inherit',
         wordBreak: 'break-all',
+        bg: 'muted',
+        p: '2px 10px',
       },
     }}
   >
