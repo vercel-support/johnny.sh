@@ -5,3 +5,4 @@ Notes on architecture.
 * [Scaling to 100k users](https://alexpareto.com/scalability/systems/2020/02/03/scaling-100k.html)
 * [Gitlab Architecture](https://docs.gitlab.com/ee/development/architecture.html)
 * [GO project architecture](https://github.com/bnkamalesh/goapp)
+* [Structuring Express Apps](https://kentcdodds.com/blog/how-i-structure-express-apps/)
