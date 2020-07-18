@@ -12,6 +12,7 @@ Honestly, it's the gear that keeps me going in this cold world.
 * Laptop - MacBook Pro (Retina, 13-inch, Early 2015). Broken screen, broken keyboard because an air conditioner at an office leaked all over it once! Still works much better than my modern MBP at work.
 * Keyboard -  Filco Majestouch Minila Air Mechanical Bluetooth Keyboard ([the pink one](https://detail.tmall.com/item.htm?spm=a1z0d.6639537.1997196601.30.65f97484tFKhXy&id=527386125426&skuId=3719085839839))
 * Text editor - VS code with [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+* Terminal - [Alacritty](https://github.com/alacritty/alacritty)
 * Font - Currently enjoying [Input Mono](https://input.fontbureau.com/). It's free to download and use for coding, FYI.
 * Monitor - [Dell U2417H 24"](https://item.jd.com/2316993.html)
 * For more info, check my [dotfiles](https://github.com/johncalvinroberts/dotfiles).
