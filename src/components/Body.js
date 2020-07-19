@@ -34,6 +34,11 @@ const Body = ({ children, ...rest }) => (
         bg: 'muted',
         p: '2px 10px',
       },
+      '& kbd': {
+        bg: 'muted',
+        border: '1px solid #d1d5da',
+        borderRadiuys: '6px',
+      },
     }}
   >
     {children}

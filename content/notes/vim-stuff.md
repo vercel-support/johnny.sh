@@ -5,7 +5,8 @@
 * [vimtutor](https://superuser.com/questions/246487/how-to-use-vimtutor)
 * [onivim](https://github.com/onivim/oni2) built on [revery](https://github.com/revery-ui/revery)
 * [vim cheatsheet](https://devhints.io/vim)
-* `vimtutor` - built in tutor
+* `vimtutor` - built in tutor in all unix envs
+* [og sourceforge documentation](http://vimdoc.sourceforge.net/htmldoc/)
 
 #### Moving Around
 
@@ -18,6 +19,9 @@
 * <kbd>23G</kbd> - jump to line
 * <kbd>$</kbd> - jump to end of line
 * <kbd>0</kbd> - jump to start of line
+* <kbd>fc</kbd> - go forward to character `c` (any character)
+* <kbd>Fc</kbd> - go backward to character `c`
+
 
 #### Deleting, editing, etc.
 * <kbd>d</kbd> - delete, a motion... e.g., <kbd>dw</kbd> means "delete word" 
@@ -29,15 +33,19 @@
 * <kbd>u</kbd> - undo a sinlge change
 * <kbd>r<kbd> - redo a single change
 * <kbd>Ctrl + r</kbd> - redo a single undo
-
+* <kbd>a</kbd> - append, aka start typing after the cursor
+* <kbd>A</kbd> - append from end of line
+* <kbd>o</kbd> - start inserting on a new line
+* <kbd>O</kbd> - start inserting on a new line from prev line 
+* <kbd>C</kbd> - delete rest of line from cursor, and start inserting.
 
 Confusingly, doubling a motion means to do it for a line?
 * <kbd>yy</kbd> - yank a line
 * <kbd>dd</kbd> - delete a line
 
 #### Searching
-* <kbd>/<kbd> -  search motion, aka forward motion. after running a search, you can use <kbd>n</kbd> to jump through search results. <kbd>N</kbd> moves backwards.k
-* <kbd>?<kbd> - same as <kbd>/</kbd>, but searches backwards.
+* <kbd>/</kbd> -  search motion, aka forward motion. after running a search, you can use <kbd>n</kbd> to jump through search results. <kbd>N</kbd> moves backwards.k
+* <kbd>?</kbd> - same as <kbd>/</kbd>, but searches backwards.
 
 #### Select
 * <kbd>v</kbd> - enter "visual" mode for selecting text.
