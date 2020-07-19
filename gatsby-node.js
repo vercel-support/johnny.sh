@@ -120,6 +120,13 @@ const createMarkdownPages = async ({ graphql, createPage }) => {
               frontmatter {
                 title
                 date
+                visual {
+                  childImageSharp {
+                    resolutions(width: 400) {
+                      src
+                    }
+                  }
+                }
               }
             }
           }
@@ -140,6 +147,7 @@ const createMarkdownPages = async ({ graphql, createPage }) => {
       component: template,
       context: {
         slug: page.node.fields.slug,
+        visual: page.node.frontmatter.visual,
         title: slug
           .split('-')
           .map((word) => word.toUpperCase())

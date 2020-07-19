@@ -39,6 +39,8 @@ Honestly, it's the gear that keeps me going in this cold world.
 * [Black Diamond Vector](https://www.blackdiamondequipment.com/en/climbing-helmets/vector-BD620213_cfg.html) to protect my brain
 * [Eldrid Ohm](http://edelrid-ohm.com/en/)
 * [Superclip](https://www.amazon.com/Superclip/dp/B00YW5UOLE)
+* Petzl Grigri
+* Petzl Kliff
   
 
   

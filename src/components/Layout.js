@@ -4,6 +4,8 @@ import { PostLink, SubtleLink } from './Link';
 
 const modes = ['default', 'dark', 'deep', 'swiss'];
 
+const links = ['/about', '/uses', '/notes', '/talks', '/projects'];
+
 const ColorButton = (props) => (
   <button
     {...props}
@@ -104,18 +106,14 @@ const Layout = (props) => {
           padding: '40px 0 0',
         }}
       >
-        <SubtleLink to="/about" sx={{ display: 'block' }}>
-          <small>/about</small>
-        </SubtleLink>
-        <SubtleLink to="/uses" sx={{ display: 'block' }}>
-          <small>/uses</small>
-        </SubtleLink>
-        <SubtleLink to="/notes" sx={{ display: 'block' }}>
-          <small>/notes</small>
-        </SubtleLink>
-        <SubtleLink to="/talks" sx={{ display: 'block' }}>
-          <small>/talks</small>
-        </SubtleLink>
+        {links.map((item) => (
+          <div key={item}>
+            <SubtleLink to={item}>
+              <small>{item}</small>
+            </SubtleLink>
+          </div>
+        ))}
+
         <small sx={{ display: 'block', marginTop: '20px' }}>
           © {new Date().getFullYear()}{' '}
         </small>

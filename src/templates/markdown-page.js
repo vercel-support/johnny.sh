@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Portal from '../components/Portal';
+import { HeroImage } from '../components/Image';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
 
@@ -17,6 +19,14 @@ const PageTemplate = (props) => {
       />
       <Body dangerouslySetInnerHTML={{ __html: page.html }} />
       <hr />
+      {page.frontmatter.visual && (
+        <Portal>
+          <HeroImage
+            fluid={page.frontmatter.visual.childImageSharp.fluid}
+            alt="A cool hero image"
+          />
+        </Portal>
+      )}
     </Layout>
   );
 };
@@ -43,6 +53,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        visual {
+          childImageSharp {
+            fluid(maxWidth: 2000, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
