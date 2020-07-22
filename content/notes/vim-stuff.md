@@ -7,6 +7,12 @@
 * [vim cheatsheet](https://devhints.io/vim)
 * `vimtutor` - built in tutor in all unix envs
 * [og sourceforge documentation](http://vimdoc.sourceforge.net/htmldoc/)
+* [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw) - a youtuber
+* [vim plug](https://github.com/junegunn/vim-plug)
+
+#### Some vimrcs
+* [elethom](https://github.com/Elethom/dot-files/blob/master/.vimrc)
+
 
 #### Moving Around
 
@@ -31,7 +37,7 @@
 * <kbd>P</kbd> - paste before cursor
 * <kbd>c</kbd> - "change" operator, <kbd>cw</kbd> = change word
 * <kbd>u</kbd> - undo a sinlge change
-* <kbd>r<kbd> - redo a single change
+* <kbd>r</kbd> - redo a single change
 * <kbd>Ctrl + r</kbd> - redo a single undo
 * <kbd>a</kbd> - append, aka start typing after the cursor
 * <kbd>A</kbd> - append from end of line
@@ -53,7 +59,7 @@ Confusingly, doubling a motion means to do it for a line?
 
 #### Text Objects
 * "Text Objects" are blocks of text with their own starting or ending characters, like `{` or `()`.
-* Text objects can be manipulated with the other operators, like <kbd>y</kbd>, <kbd>c</kbd>, and <kbd>d<kbd>, and <kbd>v</kbd>
+* Text objects can be manipulated with the other operators, like <kbd>y</kbd>, <kbd>c</kbd>, and <kbd>d</kbd>, and <kbd>v</kbd>
 * In general, defining a text object with <kbd>i</kbd> will be the so-called "inner" object, while defining a text object with <kbd>a</kbd> will be "an" object
 
 Examples:
@@ -62,4 +68,5 @@ Examples:
 * <kbd>ci(</kbd> will change everything in the parentheses 
 * <kbd>yi(</kbd> will yank everything in the parentheses
 * <kbd>dit</kbd> will delete everything within a current html tag (<kbd>t</kbd> here automatically knowing it's HTML!)
+
 
