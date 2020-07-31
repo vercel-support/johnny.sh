@@ -6,3 +6,4 @@ Notes on architecture.
 * [Gitlab Architecture](https://docs.gitlab.com/ee/development/architecture.html)
 * [GO project architecture](https://github.com/bnkamalesh/goapp)
 * [Structuring Express Apps](https://kentcdodds.com/blog/how-i-structure-express-apps/)
+* [Web RTC architecture on hmtl5 rocks](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/)
