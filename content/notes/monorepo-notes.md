@@ -18,6 +18,6 @@ Another post w/ walkthrough
 - [nice tutorial](https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875) - from itNext, covers react, webpack, babel, and testing.
 - [this issue](https://github.com/lerna/lerna/issues/1156) - in lerna repo, about webpack + lerna best practices.
 - [setting up a monorepo with lerna + yarn](https://moduscreate.com/blog/setting-up-a-monorepo-react-app-with-yarn/) - yet another react monorepo example, more about using yarn workspaces.
-
+- [Example monorepo](https://github.com/wixplosives/sample-monorepo) - with typescript, yarn workspaces, etc.
 - [stack overflow question](https://stackoverflow.com/questions/46767844/how-to-properly-use-lerna-and-webpack-when-dealing-with-a-monorepo) - about setting up a monorepo with webpack, covers chunk splitting.
 
