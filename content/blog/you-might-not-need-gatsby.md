@@ -44,13 +44,13 @@ The configuration and usage is equally complex as setting up offline support for
 
 If you want to try this vanilla-static-react setup, you can try my scaffolding tool directly.
 
-```sh
+```bash
 $ npx sssrpbp --name=some-project
 ```
 
 Also, this all works for Preact just the same.
 
-```sh
+```bash
 $ npx sssrpbp --name=some-micro-project --template=preact
 ```
 

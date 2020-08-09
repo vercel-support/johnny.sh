@@ -10,14 +10,14 @@ import { SubtleLink } from '../components/Link';
 
 const NoteTemplate = (props) => {
   const note = props.data.markdownRemark;
-  const noteTitle = props.pageContext.title;
+  const noteTitle = note.fields && note.fields.slugToTitle;
   const siteTitle = props.data.site.siteMetadata.title;
   const childNotes = props.data.childNotes.edges;
 
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO
-        title={`${siteTitle} | ${noteTitle}`}
+        title={noteTitle}
         description={note.frontmatter.description || note.excerpt}
       />
 
@@ -67,6 +67,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slugToTitle
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
