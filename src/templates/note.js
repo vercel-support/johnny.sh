@@ -4,21 +4,45 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
+import Portal from '../components/Portal';
+import { HeroImage } from '../components/Image';
+import { SubtleLink } from '../components/Link';
 
 const NoteTemplate = (props) => {
   const note = props.data.markdownRemark;
+  const noteTitle = props.pageContext.title;
   const siteTitle = props.data.site.siteMetadata.title;
+  const childNotes = props.data.childNotes.edges;
 
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO
-        title={note.frontmatter.title}
+        title={`${siteTitle} | ${noteTitle}`}
         description={note.frontmatter.description || note.excerpt}
       />
-      {note.frontmatter.title && <h1>{note.frontmatter.title}</h1>}
-      <p>{note.frontmatter.date}</p>
+
       <Body dangerouslySetInnerHTML={{ __html: note.html }} />
       <hr />
+      {childNotes &&
+        childNotes.map(({ node }) => {
+          return (
+            <div key={node.fields.slug}>
+              <h4>
+                <SubtleLink to={node.fields.slug}>
+                  {node.fields.slugToTitle}
+                </SubtleLink>
+              </h4>
+            </div>
+          );
+        })}
+      {note.frontmatter.visual && (
+        <Portal>
+          <HeroImage
+            fluid={note.frontmatter.visual.childImageSharp.fluid}
+            alt="A cool hero image"
+          />
+        </Portal>
+      )}
     </Layout>
   );
 };
@@ -47,6 +71,27 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        visual {
+          childImageSharp {
+            fluid(maxWidth: 2000, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    childNotes: allMarkdownRemark(
+      limit: 1000
+      filter: { fields: { parentDir: { eq: $slug } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            parentDir
+            slugToTitle
+          }
+        }
       }
     }
   }

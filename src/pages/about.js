@@ -6,7 +6,6 @@ import Portal from '../components/Portal';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import Body from '../components/Body';
-import { SubtleLink } from '../components/Link';
 
 const About = (props) => {
   const { data } = props;

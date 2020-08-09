@@ -63,6 +63,7 @@ BlogPostTemplate.propTypes = {
   location: PropTypes.object,
   pageContext: PropTypes.object.isRequired,
 };
+
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`

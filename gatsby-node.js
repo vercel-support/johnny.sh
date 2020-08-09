@@ -63,7 +63,6 @@ const createNotePages = async ({ graphql, createPage }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
           filter: { fileAbsolutePath: { regex: "/notes/" } }
         ) {
@@ -75,6 +74,13 @@ const createNotePages = async ({ graphql, createPage }) => {
               frontmatter {
                 title
                 date
+                visual {
+                  childImageSharp {
+                    resolutions(width: 400) {
+                      src
+                    }
+                  }
+                }
               }
             }
           }
@@ -82,25 +88,22 @@ const createNotePages = async ({ graphql, createPage }) => {
       }
     `
   );
+
   if (result.errors) {
     throw result.errors;
   }
 
   const notes = result.data.allMarkdownRemark.edges;
 
-  notes.forEach((note) => {
+  for (const note of notes) {
     createPage({
       path: note.node.fields.slug,
       component: notePage,
       context: {
         slug: note.node.fields.slug,
-        title: note.node.fields.slug
-          .split('-')
-          .map((word) => word.toUpperCase())
-          .join(' '),
       },
     });
-  });
+  }
 };
 
 const createMarkdownPages = async ({ graphql, createPage }) => {
@@ -170,11 +173,32 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode });
+    const slugValue = createFilePath({ node, getNode });
     createNodeField({
       name: 'slug',
       node,
-      value,
+      value: slugValue,
+    });
+
+    const sluggifiedTitle = path
+      .basename(slugValue)
+      .split('-')
+      .map((word) => word.toUpperCase())
+      .join(' ');
+
+    createNodeField({
+      name: 'slugToTitle',
+      node,
+      value: sluggifiedTitle,
+    });
+
+    // console.log(path.basename(slugValue));
+    const parentDir = path.dirname(slugValue);
+
+    createNodeField({
+      name: 'parentDir',
+      node,
+      value: `${parentDir}/`,
     });
   }
 };
