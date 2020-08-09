@@ -31,7 +31,6 @@ Another big plus of the area: most of this place is owned by the Bureau of Land 
 ![Bishop and Joshua Tree](../images/bishop-jt/IMG_5743.jpg)
 ![Bishop and Joshua Tree](../images/bishop-jt/IMG_7413.jpg)
 ![Bishop and Joshua Tree](../images/bishop-jt/IMG_6028.jpg)
-![Bishop and Joshua Tree](../images/bishop-jt/IMG_7448.jpg)
 ![Bishop and Joshua Tree](../images/bishop-jt/IMG_7485.jpg)
 ![Bishop and Joshua Tree](../images/bishop-jt/buttermilks.jpg)
 
