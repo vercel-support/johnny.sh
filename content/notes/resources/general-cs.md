@@ -1,4 +1,4 @@
-# General CS Related Resurces
+# General CS Related Resources
 
 ### WEB
 
@@ -58,7 +58,7 @@
 
 ### TYPESCRIPT
 
-[Advanced TypeScript Types cheat sheet (with examples)](https://dev.to/ibrahima92/advanced-typescript-types-cheat-sheet-with-examples-5414)
+* [Advanced TypeScript Types cheat sheet (with examples)](https://dev.to/ibrahima92/advanced-typescript-types-cheat-sheet-with-examples-5414)
 
 ### Editors
 
