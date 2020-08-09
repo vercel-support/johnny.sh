@@ -3,7 +3,7 @@
 * [h0mbre/Learning-C](https://github.com/h0mbre/Learning-C)
 * [kozross/awesome-c](https://github.com/kozross/awesome-c)
 * Static site generator written in C [XXIIVV/oscean](https://github.com/XXIIVV/oscean/)
-*Answers to K&R Exercises - [jpvg10/c-programming-language-exercises](https://github.com/jpvg10/c-programming-language-exercises/tree/master/Chapter%202)
+* Answers to K&R Exercises - [jpvg10/c-programming-language-exercises](https://github.com/jpvg10/c-programming-language-exercises/tree/master/Chapter%202)
 
 **Algos**
 
