@@ -1,3 +1,4 @@
+# Coffee Resources
 - James Hoffman [youtube](https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ) - lots of good coffee stuff
 - v60 - pour over
 - Fellow Stagg - overpriced design kettle
