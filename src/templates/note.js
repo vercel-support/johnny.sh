@@ -11,6 +11,7 @@ import { SubtleLink } from '../components/Link';
 const NoteTemplate = (props) => {
   const note = props.data.markdownRemark;
   const noteTitle = note.fields && note.fields.slugToTitle;
+  const gitAuthorTime = note.fields && note.fields.gitAuthorTime;
   const siteTitle = props.data.site.siteMetadata.title;
   const childNotes = props.data.childNotes.edges;
 
@@ -22,6 +23,8 @@ const NoteTemplate = (props) => {
       />
 
       <Body dangerouslySetInnerHTML={{ __html: note.html }} />
+
+      <em> Last modified: {gitAuthorTime}</em>
       <hr />
       {childNotes &&
         childNotes.map(({ node }) => {
@@ -69,6 +72,7 @@ export const pageQuery = graphql`
       html
       fields {
         slugToTitle
+        gitAuthorTime(formatString: "MMMM DD, YYYY")
       }
       frontmatter {
         title

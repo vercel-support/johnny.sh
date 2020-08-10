@@ -9,3 +9,6 @@
 
 * [Implementation of Singly Linked List in C](https://gist.github.com/echo-akash/b1345925b6c801217f7cde452f8e2c73)
 * [skorks/c-linked-list](https://github.com/skorks/c-linked-list/blob/master/linkedlist.c)
+
+### Other Random Bits
+* [Your C Compiler and Standard library Will Not Help You](https://thephd.github.io/your-c-compiler-and-standard-library-will-not-help-you)

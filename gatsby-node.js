@@ -1,4 +1,5 @@
 const path = require('path');
+const { execSync } = require('child_process');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const createBlogPosts = async ({ graphql, createPage }) => {
@@ -192,13 +193,25 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: sluggifiedTitle,
     });
 
-    // console.log(path.basename(slugValue));
+    // create a field on the node with the parent directory
     const parentDir = path.dirname(slugValue);
 
     createNodeField({
       name: 'parentDir',
       node,
       value: `${parentDir}/`,
+    });
+
+    // create a field on the node for when it was last modified
+    const gitAuthorTime = execSync(
+      `git log -1 --pretty=format:%aI ${node.fileAbsolutePath}`
+    ).toString();
+
+    console.log({ gitAuthorTime });
+    createNodeField({
+      node,
+      name: 'gitAuthorTime',
+      value: gitAuthorTime,
     });
   }
 };
