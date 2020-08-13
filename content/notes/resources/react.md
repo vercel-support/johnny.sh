@@ -1,6 +1,6 @@
 # REACT
 
-### General
+### Articles and other resources
 
 * [Preventing rerenders with React.memo and useContext hook. · Issue #15156 · facebook/react](https://github.com/facebook/react/issues/15156)
 * [Measuring React app performance](https://www.debugbear.com/blog/measuring-react-app-performance)
@@ -12,7 +12,9 @@
 * [beautifulinteractions/beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
 * [testing-library/react-testing-library](https://github.com/kentcdodds/react-testing-library)
 
+### Charts
 * [recharts/recharts](https://github.com/recharts/recharts)
+* [react-fast-charts](https://github.com/Debdut/react-fast-charts)
 
 ### Form management
 
