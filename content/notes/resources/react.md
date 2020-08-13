@@ -44,3 +44,12 @@
 * [formium/tsdx](https://github.com/formium/tsdx)
 * [jaebradley/example-rollup-react-component-npm-package](https://github.com/jaebradley/example-rollup-react-component-npm-package)
 * [reakit/reakit](https://github.com/reakit/reakit)
+
+### Design Systems / Component Libraries
+* [Material UI](https://material-ui.com/)
+* [Fluent](https://www.microsoft.com/design/fluent/)
+* [Spectrum](https://spectrum.adobe.com/)
+* [Ant Design](https://ant.design/)
+* [Semantic UI](https://semantic-ui.com/)
+* [Chakra](https://chakra-ui.com/)
+* [Theme UI (kinda)](https://theme-ui.com/)
