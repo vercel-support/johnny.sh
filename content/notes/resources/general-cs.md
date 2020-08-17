@@ -49,6 +49,7 @@
 * [goldfire/howler.js](https://github.com/goldfire/howler.js)
 * [Line](https://nivo.rocks/line)
 * [ncp](https://www.npmjs.com/package/ncp)
+* [vest](https://github.com/ealush/vest)
 
 ### INTERESTING CODEBASES
 
