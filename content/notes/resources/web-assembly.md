@@ -11,3 +11,5 @@ General smattering of useful stuff I found about Web Assembly.
 * [My slides on web assembly](https://wasm-talk.johnny.sh/)
 * [Made with web assembly](https://madewithwebassembly.com/)
 * [Emscripten - tool for compiling C/C++ to WASM](https://emscripten.org/)
+* [blog post - converting a C library to WASM](https://developers.google.com/web/updates/2018/03/emscripting-a-c-library)
+* [Talk - Advanced Web Assembly with Ben Smith](https://www.youtube.com/watch?v=FQJrcX4Ae8A)
