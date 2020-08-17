@@ -6,7 +6,6 @@
 * [appify - create the simplest possible Mac app from a shell script](https://gist.github.com/mathiasbynens/674099)
 * [App Manifest Generator](https://app-manifest.firebaseapp.com/)
 * [google/WebFundamentals](https://github.com/google/WebFundamentals)
-* [https://rustwasm.github.io/docs/book/](https://rustwasm.github.io/docs/book/)
 * [Understanding Success Criterion 1.1.1 | Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [A Modern CSS Reset - Andy Bell](https://hankchizljaw.com/wrote/a-modern-css-reset/)
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/)
