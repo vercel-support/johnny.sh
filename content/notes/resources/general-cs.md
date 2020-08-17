@@ -55,7 +55,7 @@
 
 * [Eleventy Résumé Builder](https://mxb.dev/blog/eleventy-resume-builder/)
 * [pkalogiros/AudioMass](https://github.com/pkalogiros/AudioMass/tree/master/src)
-* [Wes Bos's Gatby site](https://github.com/wesbos/wesbos)
+* [Wes Bos's Gatsby site](https://github.com/wesbos/wesbos)
 
 ### TYPESCRIPT
 
