@@ -1,5 +1,7 @@
 # Chapter 1
 
+> A Tutorial Introduction
+
 ## Super Basics
 
 This chapter is a basic introduction to types, while loops, statements, comments, arithmetic, etc.
@@ -188,3 +190,12 @@ main() {
 ```
 
 This program prints the longest line in the text stream input it receives. Simple ok.
+
+## Scope and External Variables
+
+This works pretty much the same as javascript, except for external variables. External variables that will need to live on outside of their current scope need to be declared with `extern` keyword. We don't really need to do use this much, though. Generally, we place definitions of all external variables at the beginning of the source file, and then omit all extern declarations.
+
+Also: usually instead of declaring a bunch of external variables, we instead collect them in a header file. That's what those c header files are for, the ones that use the `.h` extension, and then we import them using an `#include` statement. The functions of the standard library, for example, are declared in headers like `<stdio.h>`. 
+
+
+Take note: the keywowrds "definition" and "declaration" are used  carefully when we refer to external variables in this section."Definition" refers to the place where the variable is created or assigned storage; "declaration" refers to places where the nature of the variable is stated but no storage is allocated.
