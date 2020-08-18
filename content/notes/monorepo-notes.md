@@ -22,4 +22,4 @@ Another post w/ walkthrough
 - [stack overflow question](https://stackoverflow.com/questions/46767844/how-to-properly-use-lerna-and-webpack-when-dealing-with-a-monorepo) - about setting up a monorepo with webpack, covers chunk splitting.
 
 ### Lerna Issues
-- [https://github.com/lerna/lerna/issues/2143](Promoting an unchanged pre-release doesn't work)
+- [Promoting an unchanged pre-release doesn't work](https://github.com/lerna/lerna/issues/2143)
