@@ -56,3 +56,71 @@ enum months { JAN = 1, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC };
 ```
 
 Names must be distinct in different enums, but they can share the same values.
+
+Unrelated: the `const` declaration can be used to notate that a variable does not change, different from a constant as shown above.
+For example:
+
+```c
+const double e = 2.71828182845905; 
+const char msg[] = "warning: ";
+```
+
+## Type Conversions
+
+The C languge has type conversion, in a way it's similar to JavaScript's type coercion. Instead of "coercion" like in JS, in C we convert strings or other things into integers, via their character's numerical value.
+
+```c
+/* lower: convert c to lower case; ASCII only */ int lower(int c)
+{
+if (c >= 'A' && c <= 'Z') return c + 'a' - 'A';
+       else
+           return c;
+}
+```
+
+Note: we don't need to actually lower/upper case characters like this, and we don't need to use these kinds of operations to check types. We can just use `<ctype.h>` functions for stuff like this.
+
+You can also convert values into different types by using arithmetic operators, e.g., running `"a" * 2`
+
+## Increment and Decrement Operators
+
+I actually didn't know this before, but I did wonder about it sometimes. There is a difference between `++n` and `n++`. The expression `++n` increments n *before* its value is used, while `n++` increments n *after* its value has been used.
+
+AKA, If n is 5, then
+```c
+x = n++;
+```
+sets x to 5, but
+
+```c
+x = n++;
+```
+sets x to 6. In both cases, n becomes 6. 
+
+## Bitwise Operators
+
+No plan to use these for now but:  C provides six operators for bit manipulation, that can  be applied to integer-based values, that is: `char`, `short`, `int`, and `long`
+
+
+* `&` - bitwise AND
+* `|` - bitwise inclusive OR 
+* `^` - bitwise exclusive OR
+* `<<` - left shift
+* `>>` - right shift
+* `~` - one's complement (unary)
+
+
+
+## Precedence and Order of Evaluation
+
+Basically: everything you think in terms of operator precedences, makes sense. Unary operators take precedence over binary operators, though.
+
+Also, left-to-right precedence is equal, aka, `*` and `/` or `+` that happen to the same variable on the same line, don't necessarily guarantee left-to-right execution. You should use temporary variables in that case. I think this line sums it up quite well, and goes beyond the scope of precedence and parsing:
+
+```
+The moral is that writing code that depends on order of evaluation is a bad programming practice in any language. Naturally, it is necessary to know what things to avoid, but if you don't know how they are done on various machines, you won't be tempted to take advantage of a particular implementation.
+```
+
+Our code should be declarative, and not depend on some observed-but-originally-unexpected behavior of the machine or parser or runtime. It's the same in JS land -- don't take advantage of weird behaviors of the language, they might not be dependable cross-platform, and they also make for hard-to-read code.
+
+
