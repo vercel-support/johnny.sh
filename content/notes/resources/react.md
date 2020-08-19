@@ -15,6 +15,7 @@
 ### Charts
 * [recharts/recharts](https://github.com/recharts/recharts)
 * [react-fast-charts](https://github.com/Debdut/react-fast-charts)
+* [victory (from formidable)](https://github.com/FormidableLabs/victory)
 
 ### Form management
 
