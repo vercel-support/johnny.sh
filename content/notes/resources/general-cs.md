@@ -11,6 +11,7 @@
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 * [Computer Science from the Bottom Up](http://www.bottomupcs.com/)
 * [Happier HTML5 Form Validation](https://daverupert.com/2017/11/happier-html5-forms/)
+* [Haishan's Swagger Viewer](https://swagger-viewer.now.sh/)
 * [wybiral/code-art](https://github.com/wybiral/code-art/blob/master/projects/tiny-mirror/index.js)
 * [The Headless Dev](https://theheadless.dev/) - a collection of resources about headless chrome, pupeteer, playwright, and using them for cool browser automation shit.
 
