@@ -3,9 +3,8 @@
 - v60 - pour over
 - Fellow Stagg - overpriced design kettle
 - [An app to measure grind consistency](https://coffeeadastra.com/2019/04/07/an-app-to-measure-your-coffee-grind-size-distribution-2/)
-
-[Making Cappuccino/Latte/Flat White at Home (without an Espresso Machine)](https://www.youtube.com/watch?v=ZgIVfU0xBjA)
-[awesome-cn-cafe](https://github.com/ElaWorkshop/awesome-cn-cafe) - list of coffeeshops in China
+- [Making Cappuccino/Latte/Flat White at Home (without an Espresso Machine)](https://www.youtube.com/watch?v=ZgIVfU0xBjA)
+- [awesome-cn-cafe](https://github.com/ElaWorkshop/awesome-cn-cafe) - list of coffeeshops in China
 
 ### Coffee Knowledege
 * There are two types of coffee - robusta and arabica
