@@ -17,3 +17,4 @@
 * [The Grand Illusion (V16) First Ascent](https://www.youtube.com/watch?v=z1d0s162f30)
 * [Deep Water Soloing in Vietnam](https://www.youtube.com/watch?v=-r3cofAeN_Y)
 * [iFirst ascent on The Diamond - Longs Peak (14,255'), Colorado](https://www.youtube.com/watch?v=BPQcNxNC5j8)
+* [Stone Locals](https://www.youtube.com/watch?v=Yj7ZCYMgSvw)
