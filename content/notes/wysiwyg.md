@@ -14,6 +14,8 @@
 * [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) - idk, maybe good?
 * [React-Editor](https://github.com/fritx/react-editor)
 * [react-draft-wysiwyg](https://github.com/jpuri/react-draft-wysiwyg)
+* [Material UI Rich Text Editor](https://github.com/niuware/mui-rte)
+* [Editor.js](https://editorjs.io/) - "Block Editor"
 
 
 ### Less impressive
