@@ -56,3 +56,7 @@
 * [Semantic UI](https://semantic-ui.com/)
 * [Chakra](https://chakra-ui.com/)
 * [Theme UI (kinda)](https://theme-ui.com/)
+
+### Codebases
+- [Jira Clone](https://github.com/oldboyxx/jira_clone) - Typescript + React
+- [FullStack](https://github.com/johncalvinroberts/fullstack) - Includes stripe, React Native, and everything. Private, I forked then the original guy deleted.
