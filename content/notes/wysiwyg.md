@@ -12,6 +12,9 @@
 * [medium editor](http://yabwe.github.io/medium-editor/)
 * [ck editor](https://github.com/ckeditor/ckeditor5)
 * [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) - idk, maybe good?
+* [React-Editor](https://github.com/fritx/react-editor)
+* [react-draft-wysiwyg](https://github.com/jpuri/react-draft-wysiwyg)
+
 
 ### Less impressive
 * Prosemirror - simple. [link](https://github.com/ProseMirror/prosemirror)

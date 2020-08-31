@@ -34,11 +34,13 @@
 * [tannerlinsley/react-query](https://github.com/tannerlinsley/react-query)
 * [vercel/swr](https://github.com/zeit/swr)
 * [urql Documentation](https://formidable.com/open-source/urql/docs/graphcache/offline/)
+* [graphql-hooks](https://github.com/nearform/graphql-hooks) - minimal graphql client
 
 ### Micro Modalish things (not react specific)
 
 * [ghosh/microtip](https://github.com/ghosh/microtip)
 * [ghosh/Micromodal](https://github.com/Ghosh/micromodal)
+
 
 ### For making libs with ——-
 
@@ -49,6 +51,7 @@
 * [reakit/reakit](https://github.com/reakit/reakit)
 
 ### Design Systems / Component Libraries
+
 * [Material UI](https://material-ui.com/)
 * [Fluent](https://www.microsoft.com/design/fluent/)
 * [Spectrum](https://spectrum.adobe.com/)
@@ -56,7 +59,11 @@
 * [Semantic UI](https://semantic-ui.com/)
 * [Chakra](https://chakra-ui.com/)
 * [Theme UI (kinda)](https://theme-ui.com/)
+* [Industrial UI](https://github.com/Actyx/industrial-ui) - for Shop Floor/industrial applications.
+* [React 95](https://github.com/irskep/ninetyfive)
+
 
 ### Codebases
+
 - [Jira Clone](https://github.com/oldboyxx/jira_clone) - Typescript + React
 - [FullStack](https://github.com/johncalvinroberts/fullstack) - Includes stripe, React Native, and everything. Private, I forked then the original guy deleted.
