@@ -20,6 +20,7 @@ Another post w/ walkthrough
 - [setting up a monorepo with lerna + yarn](https://moduscreate.com/blog/setting-up-a-monorepo-react-app-with-yarn/) - yet another react monorepo example, more about using yarn workspaces.
 - [Example monorepo](https://github.com/wixplosives/sample-monorepo) - with typescript, yarn workspaces, etc.
 - [stack overflow question](https://stackoverflow.com/questions/46767844/how-to-properly-use-lerna-and-webpack-when-dealing-with-a-monorepo) - about setting up a monorepo with webpack, covers chunk splitting.
+- [Deploying Monorepo on Vercel](https://vercel.com/blog/monorepos)
 
 ### Lerna Issues
 - [Promoting an unchanged pre-release doesn't work](https://github.com/lerna/lerna/issues/2143)
