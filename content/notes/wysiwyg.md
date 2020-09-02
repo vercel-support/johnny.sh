@@ -16,6 +16,8 @@
 * [react-draft-wysiwyg](https://github.com/jpuri/react-draft-wysiwyg)
 * [Material UI Rich Text Editor](https://github.com/niuware/mui-rte)
 * [Editor.js](https://editorjs.io/) - "Block Editor"
+* [Quill](https://quilljs.com/)
+* [Toast UI Editor](https://github.com/nhn/tui.editor)
 
 
 ### Less impressive
