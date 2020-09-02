@@ -8,7 +8,6 @@
 * ReactMDE - react markdown editor built on draft js - seems legit-ish. [link](https://github.com/andrerpena/react-mde)
 * SimpleMDE - markdown/wysiwyg hybrid. Still shows markdown, but designed for non-technical users who are not familiar with or learning markdown. [link](https://github.com/sparksuite/simplemde-markdown-editor), [preview](https://simplemde.com/)
 * TUI-editor - pretty full featured, not very extensible and actually big bundle [link](https://nhnent.github.io/tui.editor/api/latest/tutorial-example01-basic.html)
-* [editorJS](https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42) - block-based editor
 * [medium editor](http://yabwe.github.io/medium-editor/)
 * [ck editor](https://github.com/ckeditor/ckeditor5)
 * [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) - idk, maybe good?
