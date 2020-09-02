@@ -1,13 +1,10 @@
 # Wysiwyg Editors
 
 ## consider using
-* DraftJS - solid rich text editor from facebook open source, for react. 
-	* [link](https://draftjs.org/)
-	* [github](https://github.com/facebook/draft-js)
-	* [in action](https://github.com/strapi/strapi/blob/master/packages/strapi-plugin-content-manager/admin/src/components/Wysiwyg/index.js)
-* ReactMDE - react markdown editor built on draft js - seems legit-ish. [link](https://github.com/andrerpena/react-mde)
-* SimpleMDE - markdown/wysiwyg hybrid. Still shows markdown, but designed for non-technical users who are not familiar with or learning markdown. [link](https://github.com/sparksuite/simplemde-markdown-editor), [preview](https://simplemde.com/)
-* TUI-editor - pretty full featured, not very extensible and actually big bundle [link](https://nhnent.github.io/tui.editor/api/latest/tutorial-example01-basic.html)
+* [Draft JS](https://github.com/facebook/draft-js) - solid rich text editor from facebook open source, for react. [link](https://draftjs.org/), [in action](https://github.com/strapi/strapi/blob/master/packages/strapi-plugin-content-manager/admin/src/components/Wysiwyg/index.js)
+* [ReactMDE](https://github.com/andrerpena/react-mde) - react markdown editor built on draft js - seems legit-ish
+* [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor) - markdown/wysiwyg hybrid. Still shows markdown, but designed for non-technical users who are not familiar with or learning markdown - [preview](https://simplemde.com/)
+* [Toast UI Editor](https://github.com/nhn/tui.editor) - pretty full featured, but not very extensible and actually very big bundle
 * [medium editor](http://yabwe.github.io/medium-editor/)
 * [ck editor](https://github.com/ckeditor/ckeditor5)
 * [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) - idk, maybe good?
@@ -16,7 +13,7 @@
 * [Material UI Rich Text Editor](https://github.com/niuware/mui-rte)
 * [Editor.js](https://editorjs.io/) - "Block Editor"
 * [Quill](https://quilljs.com/)
-* [Toast UI Editor](https://github.com/nhn/tui.editor)
+
 
 
 ### Less impressive
