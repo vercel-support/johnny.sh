@@ -1,6 +1,8 @@
 # Wysiwyg Editors
 
-## consider using
+Non-exhaustive list of rich text editors/wysiywyg editors.
+
+### consider using
 * [Draft JS](https://github.com/facebook/draft-js) - solid rich text editor from facebook open source, for react. [link](https://draftjs.org/), [in action](https://github.com/strapi/strapi/blob/master/packages/strapi-plugin-content-manager/admin/src/components/Wysiwyg/index.js)
 * [ReactMDE](https://github.com/andrerpena/react-mde) - react markdown editor built on draft js - seems legit-ish
 * [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor) - markdown/wysiwyg hybrid. Still shows markdown, but designed for non-technical users who are not familiar with or learning markdown - [preview](https://simplemde.com/)
@@ -16,7 +18,9 @@
 
 
 
+
 ### Less impressive
 * Prosemirror - simple. [link](https://github.com/ProseMirror/prosemirror)
 * Trix - seems good but based on coffeescript so i don't like. [link](https://github.com/basecamp/trix)
 * pandao editor.md. kind of outdated, seems bloated. [link](https://github.com/pandao/editor.md)
+* [Tiny MCE](https://github.com/tinymce/tinymce)
