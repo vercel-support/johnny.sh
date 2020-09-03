@@ -8,3 +8,4 @@ Notes on architecture.
 * [Structuring Express Apps](https://kentcdodds.com/blog/how-i-structure-express-apps/)
 * [Web RTC architecture on hmtl5 rocks](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/)
 * [Soundcloud Backend for Frontend (BFF) pattern](https://www.thoughtworks.com/de/insights/blog/bff-soundcloud)
+* [Simple Graph QL, without Apollo (with lots of good examples)](https://httptoolkit.tech/blog/simple-graphql-server-without-apollo)
