@@ -62,6 +62,7 @@
 * [Theme UI (kinda)](https://theme-ui.com/)
 * [Industrial UI](https://github.com/Actyx/industrial-ui) - for Shop Floor/industrial applications.
 * [React 95](https://github.com/irskep/ninetyfive)
+* [bumbag](https://github.com/bumbag/bumbag-ui)
 
 
 ### Codebases
