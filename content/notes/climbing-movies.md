@@ -16,5 +16,6 @@
 * [Jimmy Webb - A Good Season (Rocklands 2019)](https://www.youtube.com/watch?v=4Kn4hbI5T2o)
 * [The Grand Illusion (V16) First Ascent](https://www.youtube.com/watch?v=z1d0s162f30)
 * [Deep Water Soloing in Vietnam](https://www.youtube.com/watch?v=-r3cofAeN_Y)
-* [iFirst ascent on The Diamond - Longs Peak (14,255'), Colorado](https://www.youtube.com/watch?v=BPQcNxNC5j8)
+* [First ascent on The Diamond - Longs Peak (14,255'), Colorado](https://www.youtube.com/watch?v=BPQcNxNC5j8)
 * [Stone Locals](https://www.youtube.com/watch?v=Yj7ZCYMgSvw)
+* [1970s French crushers](https://youtu.be/T3SFj7SoLi8)
