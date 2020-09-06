@@ -18,4 +18,5 @@
 * [Deep Water Soloing in Vietnam](https://www.youtube.com/watch?v=-r3cofAeN_Y)
 * [First ascent on The Diamond - Longs Peak (14,255'), Colorado](https://www.youtube.com/watch?v=BPQcNxNC5j8)
 * [Stone Locals](https://www.youtube.com/watch?v=Yj7ZCYMgSvw)
-* [1970s French crushers](https://youtu.be/T3SFj7SoLi8)
+* [Patrick Edlinger - Opera Vertical, 1980s](https://youtu.be/T3SFj7SoLi8)
+* [Patrick Edlinger - La Vie Au Bout Des Doigts, 1982](https://www.youtube.com/watch?v=CZlxY5rNGJk)
