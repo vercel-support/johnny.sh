@@ -8,3 +8,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Userbase](https://github.com/encrypted-dev/userbase) - modern huge fullstack app
 - [AudioMass](https://github.com/pkalogiros/AudioMass) - Full featured audio application implemented in Vanilla JS.
 - [Sentry](https://github.com/getsentry/sentry) - typescript react
+- [GoAlert](https://github.com/target/goalert) - backend in Go, frontend in typescript react, grapqhl.
