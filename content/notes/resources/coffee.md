@@ -15,3 +15,9 @@ Coffee(and particularly arabica) is a very picky plant - it grows in a very spec
 
 
 
+#### Washed vs. Natural
+[This link](https://www.backyardbeans.com/blog/2017/7/23/coffee-washed-vs-natural-process). Basically, natural is dried while in the fruit, not removing the seed (coffee bean) from the surrounding fruit before drying. Washed process uses a machine or tank to wash the beans before drying, then the beans are dried without the surrounding fruit. 
+
+Basically: 
+* natural = fruity-er, wilder, but more imperfections and defects
+* washed = clarity, the intrinsic flavors of the bean
