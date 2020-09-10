@@ -7,3 +7,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Bitmidi](https://github.com/feross/bitmidi.com) 
 - [Userbase](https://github.com/encrypted-dev/userbase) - modern huge fullstack app
 - [AudioMass](https://github.com/pkalogiros/AudioMass) - Full featured audio application implemented in Vanilla JS.
+- [Sentry](https://github.com/getsentry/sentry) - typescript react
