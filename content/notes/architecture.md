@@ -10,3 +10,4 @@ Notes on architecture.
 * [Soundcloud Backend for Frontend (BFF) pattern](https://www.thoughtworks.com/de/insights/blog/bff-soundcloud)
 * [Simple Graph QL, without Apollo (with lots of good examples)](https://httptoolkit.tech/blog/simple-graphql-server-without-apollo)
 * [Microsoft Guidelines for REST](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
+* [Flareact - server-rendered React on cloudflare edge node workers](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
