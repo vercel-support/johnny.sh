@@ -15,6 +15,7 @@
 * [wybiral/code-art](https://github.com/wybiral/code-art/blob/master/projects/tiny-mirror/index.js)
 * [The Headless Dev](https://theheadless.dev/) - a collection of resources about headless chrome, pupeteer, playwright, and using them for cool browser automation shit.
 
+
 ### GIT
 
 * [A comparison of using `git flow` commands versus raw `git` commands.](https://gist.github.com/JamesMGreene/cdd0ac49f90c987e45ac)
@@ -51,12 +52,8 @@
 * [Line](https://nivo.rocks/line)
 * [ncp](https://www.npmjs.com/package/ncp)
 * [vest](https://github.com/ealush/vest)
+* [Filepond](https://github.com/pqina/filepond)
 
-### INTERESTING CODEBASES
-
-* [Eleventy Résumé Builder](https://mxb.dev/blog/eleventy-resume-builder/)
-* [pkalogiros/AudioMass](https://github.com/pkalogiros/AudioMass/tree/master/src)
-* [Wes Bos's Gatsby site](https://github.com/wesbos/wesbos)
 
 ### TYPESCRIPT
 
