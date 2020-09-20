@@ -11,3 +11,4 @@ Notes on architecture.
 * [Simple Graph QL, without Apollo (with lots of good examples)](https://httptoolkit.tech/blog/simple-graphql-server-without-apollo)
 * [Microsoft Guidelines for REST](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
 * [Flareact - server-rendered React on cloudflare edge node workers](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
+* [NestJS + Dynamo DB + Serverless](https://medium.com/javascript-in-plain-english/serverless-nestjs-with-aws-dynamodb-e7530ab33c78)
