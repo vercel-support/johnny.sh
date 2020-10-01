@@ -43,6 +43,7 @@
 
 * [ghosh/microtip](https://github.com/ghosh/microtip)
 * [ghosh/Micromodal](https://github.com/Ghosh/micromodal)
+* [tippy](https://github.com/atomiks/tippyjs-react)
 
 
 ### For making libs with ——-
