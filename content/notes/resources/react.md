@@ -39,11 +39,12 @@
 * [urql Documentation](https://formidable.com/open-source/urql/docs/graphcache/offline/)
 * [graphql-hooks](https://github.com/nearform/graphql-hooks) - minimal graphql client
 
-### Micro Modalish things (not react specific)
+### Components
 
 * [ghosh/microtip](https://github.com/ghosh/microtip)
 * [ghosh/Micromodal](https://github.com/Ghosh/micromodal)
 * [tippy](https://github.com/atomiks/tippyjs-react)
+* [react-chrono](https://github.com/prabhuignoto/react-chrono) - timeline component
 
 
 ### For making libs with ——-
