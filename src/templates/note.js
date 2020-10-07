@@ -24,7 +24,7 @@ const NoteTemplate = (props) => {
 
       <Body dangerouslySetInnerHTML={{ __html: note.html }} />
 
-      <em> Last modified: {gitAuthorTime}</em>
+      {/* <em> Last modified: {gitAuthorTime}</em> */}
       <hr />
       {childNotes &&
         childNotes.map(({ node }) => {
