@@ -12,3 +12,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [GoAlert](https://github.com/target/goalert) - backend in Go, frontend in typescript react, grapqhl.
 - [Eleventy Résumé Builder](https://mxb.dev/blog/eleventy-resume-builder/)
 - [Wes Bos's Gatsby site](https://github.com/wesbos/wesbos)
+- [Upcount](https://github.com/madisvain/upcount) - electron app
