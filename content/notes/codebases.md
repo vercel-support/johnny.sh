@@ -13,3 +13,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Eleventy Résumé Builder](https://mxb.dev/blog/eleventy-resume-builder/)
 - [Wes Bos's Gatsby site](https://github.com/wesbos/wesbos)
 - [Upcount](https://github.com/madisvain/upcount) - electron app
+- [Fullstack Starter Kit](https://github.com/karanpratapsingh/fullstack-starterkit) - very well architected GraphQL, Node JS, React starter kit.
