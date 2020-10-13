@@ -35,3 +35,30 @@ int binsearch(int x, int v[], int n)
   return -1;
 }
 ```
+
+## Goto
+
+The C programming language has a feature called `goto`, which is like a javascript label. The authors don't seem to like or recommend this language feature much, saying that, "any code involving a `goto` can be written without it". The contest that this feature is harder to read/maintain as it breaks the vertical flow of the code?
+
+Anyways, it can be useful, in a case like this with nested for-loops.
+
+```C
+for (i = 0; i < n; i++) {
+  for (j = 0; j < m; j++) {
+    if (a[i] == b[j]) goto found;
+  }
+}
+found: 
+  /* got one: a[i] == b[j] */
+
+
+for ( ... ) {
+  for ( ... ) {
+    if (disaster) goto error;
+  }
+}
+
+error: 
+  /* clean up the mess */
+
+```
