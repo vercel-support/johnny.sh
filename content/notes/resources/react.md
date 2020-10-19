@@ -69,6 +69,11 @@
 * [bumbag](https://github.com/bumbag/bumbag-ui)
 
 
+### i18n
+* [talkr](https://www.npmjs.com/package/talkr)
+* [ttag](https://ttag.js.org/)
+  
+
 ### Codebases
 
 - [Jira Clone](https://github.com/oldboyxx/jira_clone) - Typescript + React
