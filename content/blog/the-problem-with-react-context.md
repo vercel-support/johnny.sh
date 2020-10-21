@@ -1,6 +1,6 @@
 ---
-title: You Might Not Need Gatsby
-date: "2020-05-17T15:24:00.603Z"
+title: The problem with React Context
+date: "2020-10-22T15:24:00.603Z"
 visual: '../images/context.jpg'
 description: 'Or: why Redux is not dead, yet.'
 ---
