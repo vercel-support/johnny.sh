@@ -8,7 +8,7 @@ description: 'Or: why Redux is not dead, yet.'
 
 This is a public service announcement.
 
-I'm here to tell you: don't do it. Don't replace Redux with React Context.
+I'm here to tell you: be careful, **maybe don't** replace Redux with React Context.
 
 You can't always safely replace Redux, Mobx, or other libraries and strategies for global state management in React with [React Context](https://reactjs.org/docs/context.html).
 
@@ -18,7 +18,10 @@ One step back, some context on what I'm talking about here. `React.Context` is a
 
 On top of `React.Context`, we have new(ish) hooks-based APIs for using contexts, namely `React.useContext`.
 
-Basically, we have a super easy way to gain global state management in React. We can easily get a super easy, super awesome, Redux-like global store with this approach.
+Throwing these two things together, along with `useReducer`, we have a super easy way to gain global state management in React. We can easily get a super easy, super awesome, Redux-like global store with this approach.
+
+Here's a common example.
+
 
 ```javascript
 import { createContext, useContext, useReducer } from 'react'
@@ -50,14 +53,16 @@ export const GlobalStoreProvider = ({ children }) => {
 }
 ```
 
-I'm seeing this pop up in codebases all over the place. People are [talking](https://medium.com/cleverprogrammer/the-react-context-api-364da590aa73) about [replacing](https://dev.to/ibrahima92/redux-vs-react-context-which-one-should-you-choose-2hhh) Redux with Context.
+This sort of pattern is popping up in codebases all over the place. People are [talking](https://medium.com/cleverprogrammer/the-react-context-api-364da590aa73) about [replacing](https://dev.to/ibrahima92/redux-vs-react-context-which-one-should-you-choose-2hhh) Redux with Context.
 
 
 ## Why is this bad?
 
-It's not bad. Actually it's fine. There is just one problem: the global store is shared, and not memoized. When anything in the context changes, any component which used the `useStore` hook will update. This will cause a lot of unnecessary re-renders.
+It's not bad. Actually it's fine. There is just one problem: the global store **global**, and not memoized. When anything in the context changes, any component which used the `useStore` hook will update. This will cause a lot of unnecessary re-renders.
 
-This is exactly why the Redux hooks API exposes this weird [`isEqual`](https://react-redux.js.org/api/hooks) function as the second argument -- it's for memoizing, and judging if a re-render is needed. 
+From the above example, if I have a component which uses `globalState.user`, and a different component uses `globalState.likes`, **both** components will be rendered if anything in the store changes.
+
+This is exactly why the Redux hooks API exposes this [`isEqual`](https://react-redux.js.org/api/hooks) function as the second argument to `useSelector` -- it's for memoizing, and judging if a re-render is needed. 
 
 ```javascript
 const result = useSelector(selector, equalityFn)
