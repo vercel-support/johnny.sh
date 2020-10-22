@@ -1,6 +1,6 @@
 ---
-title: The problem with React Context
-date: "2020-10-22T15:24:00.603Z"
+title: You Might Not Need Gatsby
+date: "2020-05-17T15:24:00.603Z"
 visual: '../images/context.jpg'
 description: 'Or: why Redux is not dead, yet.'
 ---
@@ -8,9 +8,8 @@ description: 'Or: why Redux is not dead, yet.'
 
 This is a public service announcement.
 
-I'm here to tell you: be careful, **maybe don't** replace Redux with React Context.
+I'm here to tell you: be careful, **maybe don't** replace Redux with [React Context](https://reactjs.org/docs/context.html). It's not necessarily safe.
 
-You can't always safely replace Redux, Mobx, or other libraries and strategies for global state management in React with [React Context](https://reactjs.org/docs/context.html).
 
 ## Context on Context
 
@@ -58,17 +57,19 @@ This sort of pattern is popping up in codebases all over the place. People are [
 
 ## Why is this bad?
 
-It's not bad. Actually it's fine. There is just one problem: the global store **global**, and not memoized. When anything in the context changes, any component which used the `useStore` hook will update. This will cause a lot of unnecessary re-renders.
+It's not bad. Actually it's fine. There is just one problem: the global store is **global**, and not memoized. When anything in the context changes, any component which used the `useStore` hook will update. This will cause a lot of unnecessary re-renders.
 
 From the above example, if I have a component which uses `globalState.user`, and a different component uses `globalState.likes`, **both** components will be rendered if anything in the store changes.
 
-This is exactly why the Redux hooks API exposes this [`isEqual`](https://react-redux.js.org/api/hooks) function as the second argument to `useSelector` -- it's for memoizing, and judging if a re-render is needed. 
+This is why the Redux hooks API exposes this weird [`isEqual`](https://react-redux.js.org/api/hooks) function as the second argument -- it's for memoizing, allowing the developer to manually judge if a re-render is needed. 
 
 ```javascript
 const result = useSelector(selector, equalityFn)
 ```
 
 The whole idea behind an `isEqual` function existing in React code is [controversial](https://gist.github.com/sebmarkbage/a5ef436427437a98408672108df01919), and maybe a sign that the whole abstraction is falling apart. We're worrying about the engine when we should be focused on driving the car - [best Stack Overflow answer ever](https://stackoverflow.com/questions/3883006/meaning-of-leaky-abstraction). Keep your eyes on the road!
+
+**Note**: For a proposed example implementation of how to memoize with `useContext`, check out Dan Abramov's response on [React#15156](https://github.com/facebook/react/issues/15156#issuecomment-474590693). There's also some interesting discussion in that issue.
 
 ## Key Takeaway?
 
