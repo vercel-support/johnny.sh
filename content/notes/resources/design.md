@@ -7,3 +7,4 @@
 * [Dietrich Rams 10 principles of design](https://www.notion.so/Dietrich-Rams-10-principles-of-design-b64a9e475960463a83599a994a15e9ed)
 * [Create Customizable, Hi-Def, and Scalable Backgrounds](https://www.svgbackgrounds.com/#pattern-randomized)
 * [jxnblk/microicon](https://github.com/jxnblk/microicon)
+* [feather icons](https://feathericons.com/)
