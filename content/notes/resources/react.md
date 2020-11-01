@@ -12,6 +12,7 @@
 * [beautifulinteractions/beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
 * [testing-library/react-testing-library](https://github.com/kentcdodds/react-testing-library)
 * Cache busting: [Cache busting a react app](https://dev.to/flexdinesh/cache-busting-a-react-app-22lk), [this gist](https://gist.github.com/kellenmace/309b93c366372e5d08f567b987a521ce)
+* [react-aria](https://react-spectrum.adobe.com/react-aria/getting-started.html#installation)
 
 ### Charts
 * [recharts/recharts](https://github.com/recharts/recharts)
