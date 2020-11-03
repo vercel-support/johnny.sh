@@ -10,3 +10,4 @@ A list of cool homebrew packages (mostly command line tools) I have installed
 * __fortune__ -> gives you a weird fortune.
 * __bandwich__
 * __zoxide__
+* __jq__
