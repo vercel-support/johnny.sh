@@ -17,6 +17,7 @@
 
 ### GENERAL SOFTWARE ENGINEERING
 * [Naming Things In Code](http://journal.stuffwithstuff.com/2009/06/05/naming-things-in-code/)
+* [More on Naming Things](https://www.approxion.com/capital-offenses-how-to-handle-abbreviations-in-camelcase/) - how to handle abbreviations in camel case
 
 
 ### GIT
