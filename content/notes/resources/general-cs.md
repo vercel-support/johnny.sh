@@ -37,11 +37,12 @@
 * [CS50: Introduction to Computer Science](https://online-learning.harvard.edu/course/cs50-introduction-computer-science)
 * [Program for Fibonacci numbers - GeeksforGeeks](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)
 
-### SECURITY
-
+### Web Security
 * [CS253 - Web Security](https://web.stanford.edu/class/cs253/)
-* [5 DevOps Books to Read for FREE](https://dev.to/aakatev/5-devops-books-to-read-for-free-3860)
+* [OAUTH 2.0 spec](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-00#section-8)
 * [LocalStorage vs Cookies: All You Need To Know About Storing JWT Tokens Securely in The Front-End](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email)
+* [5 DevOps Books to Read for FREE](https://dev.to/aakatev/5-devops-books-to-read-for-free-3860)
+
 
 ### BASH
 
