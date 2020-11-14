@@ -5,3 +5,4 @@
 * [parcel + typescript + react](https://github.com/adrianhall/parcel-typescript-template) - a boilerplate/template
 * [React Redux Typescript Guide](https://github.com/piotrwitek/react-redux-typescript-guide)
 * [Formium Typescript Guidelines](https://github.com/formium/typescript) - very good opinionated Typescript guide.
+* [10 Insights To Adopting Typescript At Scale](https://www.techatbloomberg.com/blog/10-insights-adopting-typescript-at-scale/) - awesome article from Bloomberg about migrating to typescript, chock-full of best practices.
