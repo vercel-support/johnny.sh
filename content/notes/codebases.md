@@ -16,3 +16,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Fullstack Starter Kit](https://github.com/karanpratapsingh/fullstack-starterkit) - very well architected GraphQL, Node JS, React starter kit.
 - [Vercedl React Dashboard](https://github.com/ofekashery/react-dashboard-design) - just frontend, typescript react
 - [Admin Bro](https://github.com/SoftwareBrothers/admin-bro) - just frontend, typescript react
+- [Stator](https://github.com/chocolat-chaud-io/stator) - typescript fullstack.
