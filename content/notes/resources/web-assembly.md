@@ -14,3 +14,4 @@ General smattering of useful stuff I found about Web Assembly.
 * [blog post - converting a C library to WASM](https://developers.google.com/web/updates/2018/03/emscripting-a-c-library)
 * [Talk - Advanced Web Assembly with Ben Smith](https://www.youtube.com/watch?v=FQJrcX4Ae8A)
 * [Tiny Search - full text search with web assembly](https://endler.dev/2019/tinysearch/)
+* [Going from JS to WASM](https://engineering.q42.nl/webassembly/) - interesting in-depth walkthrough by a person who converted a computation-heavy client-side app into a wasm-driven kitty. AssemblyScript + interesting architecture.
