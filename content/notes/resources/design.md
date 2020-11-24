@@ -8,3 +8,4 @@
 * [Create Customizable, Hi-Def, and Scalable Backgrounds](https://www.svgbackgrounds.com/#pattern-randomized)
 * [jxnblk/microicon](https://github.com/jxnblk/microicon)
 * [feather icons](https://feathericons.com/)
+* [tailwind hero icons](https://github.com/tailwindlabs/heroicons)
