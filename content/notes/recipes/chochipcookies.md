@@ -31,6 +31,6 @@ Roll the dough up into little balls, about the size of a golf ball or so. At thi
 
 Lastly, when it's time to cook, here's what you do.
 
-1. Preheat the oven to 325 degrees fahrenheit (162 degrees celsius).
+1. Preheat the oven to 350 degrees fahrenheit (176.667 degrees celsius).
 2. Put the cookies on a pan with some wax paper.
 3. Cook in the oven for 15-18 minutes.
