@@ -9,3 +9,4 @@
 * [jxnblk/microicon](https://github.com/jxnblk/microicon)
 * [feather icons](https://feathericons.com/)
 * [tailwind hero icons](https://github.com/tailwindlabs/heroicons)
+* [free svg icons](https://2.flexiple.com/scale/all-illustrations) no attribution required
