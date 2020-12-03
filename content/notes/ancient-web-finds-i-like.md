@@ -4,3 +4,4 @@
 * [ball of mud](http://www.laputan.org/mud/)
 * [Dependable Drive-In](https://www.dependabledrivein.com/Rules/rules.html)
 * [Photos from inside a Russian submarine](https://ru-submarine.livejournal.com/17486.html)
+* [Dokuwiki](https://www.dokuwiki.org/dokuwiki) - old school wiki/knowledge base software
