@@ -12,6 +12,7 @@
 
 #### Some vimrcs
 * [elethom](https://github.com/Elethom/dot-files/blob/master/.vimrc)
+* [Kun](https://gist.github.com/rankun203/8913781c4d02a0520a2cbc9703ef04c4)
 
 
 #### Moving Around
