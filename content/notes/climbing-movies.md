@@ -2,7 +2,7 @@
 
 All of these are climbing movies which are free to watch online, which I think are sick.
 
-* [The Real Thing](https://www.youtube.com/watch?v=brbxoKEgsw0)
+* [The Real Thing (1996)](https://www.youtube.com/watch?v=brbxoKEgsw0)
 * [The Island](https://www.youtube.com/watch?v=shf2_c1vbHU)
 * [ROTPUNKT](https://www.youtube.com/watch?v=SbWvFjUIt5k)
 * [Sawanobori](https://www.youtube.com/watch?v=-yNS7EF7LGI)
@@ -18,9 +18,10 @@ All of these are climbing movies which are free to watch online, which I think a
 * [Deep Water Soloing in Vietnam](https://www.youtube.com/watch?v=-r3cofAeN_Y)
 * [First ascent on The Diamond - Longs Peak (14,255'), Colorado](https://www.youtube.com/watch?v=BPQcNxNC5j8)
 * [Stone Locals](https://www.youtube.com/watch?v=Yj7ZCYMgSvw)
-* [Patrick Edlinger - Opera Vertical, 1980s](https://youtu.be/T3SFj7SoLi8)
-* [Patrick Edlinger - La Vie Au Bout Des Doigts, 1982](https://www.youtube.com/watch?v=CZlxY5rNGJk)
+* [Patrick Edlinger - Opera Vertical (1980s)](https://youtu.be/T3SFj7SoLi8)
+* [Patrick Edlinger - La Vie Au Bout Des Doigts (1982)](https://www.youtube.com/watch?v=CZlxY5rNGJk)
 * [Straight Up • A Lake District Bouldering Film](https://www.youtube.com/watch?v=7KNNyWyyg30)
 * [Frequent Flyers (2000)](https://vimeo.com/201031897/e4d9978a9f)
 * [Rotpunkt: Bibliographie | Alex Megos climbs his hardest project yet](https://www.youtube.com/watch?v=COuxNFuAS1Q)
 * [Disturban - gnarly urban boulderers in Montreal](https://www.youtube.com/watch?v=aLU4fKaiRpA)
+* [Dist-urban Behavior - early 2000's Montreal urban bouldering](https://www.dailymotion.com/video/xh0yfm)
