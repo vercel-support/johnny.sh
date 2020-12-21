@@ -15,7 +15,7 @@ Non-exhaustive list of rich text editors/wysiywyg editors.
 * [Material UI Rich Text Editor](https://github.com/niuware/mui-rte)
 * [Editor.js](https://editorjs.io/) - "Block Editor"
 * [Quill](https://quilljs.com/)
-
+* [bangle](https://bangle.dev/)
 
 
 
