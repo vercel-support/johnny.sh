@@ -11,3 +11,4 @@
 * [tailwind hero icons](https://github.com/tailwindlabs/heroicons)
 * [free svg illustrations](https://2.flexiple.com/scale/all-illustrations) the shopify saas-y kind. no attribution required.
 * [Remix Icons](https://remixicon.com/)
+* [bytedance Icon Park free icons](https://github.com/bytedance/IconPark)
