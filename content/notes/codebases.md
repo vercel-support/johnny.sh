@@ -17,3 +17,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Vercedl React Dashboard](https://github.com/ofekashery/react-dashboard-design) - just frontend, typescript react
 - [Admin Bro](https://github.com/SoftwareBrothers/admin-bro) - just frontend, typescript react
 - [Stator](https://github.com/chocolat-chaud-io/stator) - typescript fullstack.
+- [Nest + MongoDB](https://github.com/MiroslavPetrik/nest-mongo-api-starter) - has good full-featured end-to-end auth flow, password reset, token invalidation.
