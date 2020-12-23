@@ -9,7 +9,6 @@ Prepare the dough.
 
 ### Ingredients
 
-For the dough -
 * 55g of avocado
 * 110g of skim milk
 * 3g of yeast
@@ -18,6 +17,7 @@ For the dough -
 * 1 egg
 * 250g of high-gluten whole wheat flower
 
+Instructions -
 
 1. Smash up the avocado
 2. Beat the egg
@@ -38,10 +38,11 @@ Next, we need to make the cinnamon liner for the bread.
 
 ### Ingredients
 
-For the cinnamon liner -
 * 30g of Brown Sugar
 * 3g of cinnamon powder
 * 8g of skim milk
+
+Instructions -
 
 1. Mix those in a bowl to consistency.
 2. Sprinkle some flour onto a surface (the surface where you will roll up the cinnamon rolls).
@@ -63,8 +64,6 @@ You should now have six little braided pieces of dough.
 
 Now, the baking part.
 
-### Ingredients
-
 1. Preheat the oven to **200 degrees celsius**.
 2. Butter a cupcake pan.
 3. Put the six dough braids into the pan and slather some egg on top (a small layer of egg? need more details about this 鸡蛋液)
@@ -77,29 +76,29 @@ Serve with coffee.
 
 ### Images
 
-#### <a href="step-4">Step 4</>
+#### <span id="step-4">Step 4</span>
 ![Mixing with hand](../../images/recipe-images/cinnamon-rolls-1.png)
 
-#### <a href="step-5">Step 5</>
+#### <span id="step-5">Step 5</span>
 ![Knead with fist](../../images/recipe-images/cinnamon-rolls-2.png)
 
-#### <a href="step-10">Step 10</>
+#### <span id="step-10">Step 10</span>
 ![Netty sinewy texture](../../images/recipe-images/cinnamon-rolls-3.png)
 
-#### <a href="2-step-5">Part two step 5</>
+#### <span id="2-step-5">Part two step 5</span>
 ![Rolling it out](../../images/recipe-images/cinnamon-rolls-4.png)
 
-#### <a href="2-step-8">Part two step 7</>
+#### <span id="2-step-8">Part two step 7</span>
 ![Slather it on](../../images/recipe-images/cinnamon-rolls-5.png)
 
-#### <a href="2-step-8">Part two step 8</>
+#### <span id="2-step-8">Part two step 8</span>
 ![Fold it](../../images/recipe-images/cinnamon-rolls-6.png)
 
-#### <a href="2-step-8">Part two step 10</>
+#### <span id="2-step-8">Part two step 10</span>
 ![Slice the slice](../../images/recipe-images/cinnamon-rolls-7.png)
 
-#### <a href="2-step-8">Part two step 11</>
+#### <span id="2-step-8">Part two step 11</span>
 ![Braid it](../../images/recipe-images/cinnamon-rolls-8.png)
 
-#### <a href="2-step-8">Part two step 12</>
+#### <span id="2-step-8">Part two step 12</span>
 ![Pinch it](../../images/recipe-images/cinnamon-rolls-9.png)
