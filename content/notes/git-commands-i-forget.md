@@ -133,3 +133,22 @@ The perfect alibi in a court of law.
 $ git log --after="2020-02-02 00:00" --before="2020-02-08 23:59"
 ```
 
+## Prioritize a branch during a merge
+
+**Problem**: You have git conflicts that seem totally unecessary, like it's not even a conflict. Yet git sees like 70 conflicts when merging. You just want to say, "Hi git, please merge this branch and prioritize my commits when resolving the conflicts. Thx git."
+
+You can do this using [merge strategies](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
+
+**Example 1**: mmerge branch `sick-hotfix` into `master`, and choose the changes from `sick-hotfix` if any conflicts are encountered...
+```
+$ git checkout master
+$ git merge -Xtheirs sick-hotfix
+```
+
+**Example 2**: rebase changes from `dev` onto `cool-feature`, and choose the changes from `cool-feature` if any conflicts are encountered...
+```
+$ git checkout cool-feature
+$ git rebase -Xtheirs dev
+```
+
+**NOTE**: `Xtheirs` and `Xours` are "opposite" when merging vs. rebasing.
