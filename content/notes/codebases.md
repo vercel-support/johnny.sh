@@ -19,3 +19,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Stator](https://github.com/chocolat-chaud-io/stator) - typescript fullstack.
 - [Nest + MongoDB](https://github.com/MiroslavPetrik/nest-mongo-api-starter) - has good full-featured end-to-end auth flow, password reset, token invalidation.
 - [Egoist GraphQL API Started](https://github.com/egoist/graphql-api-starter) - prisma-based.
+-[Egoist's Hakka](https://github.com/egoist/hakka) Snowpack/React/Next, Express + Apollo Server + TypeORM + Type GraphQL.
