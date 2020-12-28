@@ -77,28 +77,28 @@ Serve with coffee.
 ### Images
 
 #### <span id="step-4">Step 4</span>
-![Mixing with hand](../../images/recipe-images/cinnamon-rolls-1.png)
+![Mixing with hand](../../images/recipe-images/cinnamon-rolls-1.jpg)
 
 #### <span id="step-5">Step 5</span>
-![Knead with fist](../../images/recipe-images/cinnamon-rolls-2.png)
+![Knead with fist](../../images/recipe-images/cinnamon-rolls-2.jpg)
 
 #### <span id="step-10">Step 10</span>
-![Netty sinewy texture](../../images/recipe-images/cinnamon-rolls-3.png)
+![Netty sinewy texture](../../images/recipe-images/cinnamon-rolls-3.jpg)
 
 #### <span id="2-step-5">Part two step 5</span>
-![Rolling it out](../../images/recipe-images/cinnamon-rolls-4.png)
+![Rolling it out](../../images/recipe-images/cinnamon-rolls-4.jpg)
 
 #### <span id="2-step-8">Part two step 7</span>
-![Slather it on](../../images/recipe-images/cinnamon-rolls-5.png)
+![Slather it on](../../images/recipe-images/cinnamon-rolls-5.jpg)
 
 #### <span id="2-step-8">Part two step 8</span>
-![Fold it](../../images/recipe-images/cinnamon-rolls-6.png)
+![Fold it](../../images/recipe-images/cinnamon-rolls-6.jpg)
 
 #### <span id="2-step-8">Part two step 10</span>
-![Slice the slice](../../images/recipe-images/cinnamon-rolls-7.png)
+![Slice the slice](../../images/recipe-images/cinnamon-rolls-7.jpg)
 
 #### <span id="2-step-8">Part two step 11</span>
-![Braid it](../../images/recipe-images/cinnamon-rolls-8.png)
+![Braid it](../../images/recipe-images/cinnamon-rolls-8.jpg)
 
 #### <span id="2-step-8">Part two step 12</span>
-![Pinch it](../../images/recipe-images/cinnamon-rolls-9.png)
+![Pinch it](../../images/recipe-images/cinnamon-rolls-9.jpg)
