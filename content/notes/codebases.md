@@ -21,3 +21,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Egoist GraphQL API Started](https://github.com/egoist/graphql-api-starter) - prisma-based.
 - [Egoist's Hakka](https://github.com/egoist/hakka) Snowpack/React/Next, Express + Apollo Server + TypeORM + Type GraphQL.
 - [feednext](https://github.com/feednext/feednext)
+- [NextJS + Nest JS](https://github.com/tomanagle/NextJS-NestJS-GraphQL-Starter) with Google Oauth, React Hook Form, everything.
