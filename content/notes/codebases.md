@@ -22,3 +22,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [Egoist's Hakka](https://github.com/egoist/hakka) Snowpack/React/Next, Express + Apollo Server + TypeORM + Type GraphQL.
 - [feednext](https://github.com/feednext/feednext)
 - [NextJS + Nest JS](https://github.com/tomanagle/NextJS-NestJS-GraphQL-Starter) with Google Oauth, React Hook Form, everything.
+- [mydrive](https://github.com/subnub/myDrive) - very full-featured React frontend, typescript backend.
