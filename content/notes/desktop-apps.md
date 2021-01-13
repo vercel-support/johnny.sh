@@ -14,3 +14,5 @@ While I haven't ever shipped a desktop app to production, I've been fiddling wit
 * [revery](https://github.com/revery-ui/revery) - not necessarily using frontend tech/Javascript, but is designed to be easy for JS devs to use. Super performant next-gen shit.
 * [Tauri](https://tauri.studio/en/)
 * [sciter](https://sciter.com/) - no idea how it works, but is extremely lightweight when compared with electron. [example app](https://github.com/GirkovArpa/clipper-sciter)
+
+Side note: guide to distributing mac apps outside the app store - [link](https://rambo.codes/posts/2021-01-08-distributing-mac-apps-outside-the-app-store).
