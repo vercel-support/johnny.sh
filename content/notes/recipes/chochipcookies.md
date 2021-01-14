@@ -1,8 +1,8 @@
 # Chocolate chip cookies
 
-* 4 oz. butter - room temperature or melted
-* 1/2 cup brown sugar
-* 1/2 cup of granulated sugar
+* 4 oz. (113g) butter - room temperature or melted
+* 1/2 cup (64g) brown sugar
+* 1/2 cup (64g) of granulated sugar
 
 Mix those together with a spatula, "creaming" it against the side of the bowl. This lends structure to the cookie. When it becomes a creamy consistency, you can move on.
 
@@ -12,13 +12,13 @@ Mix those together with a spatula, "creaming" it against the side of the bowl. T
 Blend those into the bowl of butter and sugar mix.
 Now move on to the dry ingredients.
 
-* 1 and 1/4 cup of all purpose flour
+* 1 and 1/4 cup (160g) of all purpose flour
 * 1/2 teaspoon baking soda
 * 1/2 teaspoon salt
   
 Mix into the bowl real nice and add the key ingredient.
 
-* 1 and 1/2 cup chocolate chip cookies.
+* 1 and 1/2 cup (192g) chocolate chip cookies.
 * If you're fancy, you can chop up some dark chocolate here and add as well.
 
 Done mixing and you have chocolate chip cookie dough.
