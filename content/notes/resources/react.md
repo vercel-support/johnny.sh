@@ -14,6 +14,7 @@
 * Cache busting: [Cache busting a react app](https://dev.to/flexdinesh/cache-busting-a-react-app-22lk), [this gist](https://gist.github.com/kellenmace/309b93c366372e5d08f567b987a521ce)
 * [react-aria](https://react-spectrum.adobe.com/react-aria/getting-started.html#installation)
 * [jotai](https://github.com/pmndrs/jotai) - really good state management
+* [use-eazy-auth](https://github.com/inmagik/use-eazy-auth) - nice auth state management, handles refresh and auth state.
 
 ### Charts
 * [recharts/recharts](https://github.com/recharts/recharts)
