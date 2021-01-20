@@ -9,3 +9,4 @@
 * Useful chrome area → chrome://inspect/#devices
 * [Great Express Node JS Server](https://github.com/feross/bitmidi.com/blob/master/src/server/app.js) - with Content Security Policy, Rate Limiting, logging, etc.
 * Mega GH Repo of Node Best Practices - [link](https://github.com/goldbergyoni/nodebestpractices)
+* [Node JS Dependency Based Attacks](https://gabrielrumiranda.gitbook.io/nodejs-dependency-based-attacks/) -- monkeypatching `required.cache` and other fun.
