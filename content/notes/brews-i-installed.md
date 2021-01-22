@@ -11,4 +11,5 @@ A list of cool homebrew packages (mostly command line tools) I have installed
 * __bandwich__
 * __zoxide__
 * __jq__
-* __dog__ like dig, but sick
+* __dog__ -> like dig, but sick
+* __bitbar__ -> sick [af](https://github.com/matryer/bitbar)
