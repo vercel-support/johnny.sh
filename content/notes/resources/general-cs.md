@@ -14,6 +14,7 @@
 * [Haishan's Swagger Viewer](https://swagger-viewer.now.sh/)
 * [wybiral/code-art](https://github.com/wybiral/code-art/blob/master/projects/tiny-mirror/index.js)
 * [The Headless Dev](https://theheadless.dev/) - a collection of resources about headless chrome, pupeteer, playwright, and using them for cool browser automation shit.
+* [WebHint](https://webhint.io/) - featuring a verrrrrry stringent scanner for web best practices, like Lighthouse on meth.
 
 ### GENERAL SOFTWARE ENGINEERING
 * [Naming Things In Code](http://journal.stuffwithstuff.com/2009/06/05/naming-things-in-code/)
