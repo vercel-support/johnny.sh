@@ -81,3 +81,4 @@ External resources, which are all inaccurate but potentially useful:
 - [Reddit thread](https://www.reddit.com/r/China/comments/9307vh/getting_a_drivers_license_2018_refresher/)
 - [Getting a driving licence in Shanghai](https://everydayhai.com/2018/06/06/getting-a-driving-licence-in-shanghai/)
 - [Convert to china Driving License](http://www.shanghaihalfpat.com/convert-to-china-driving-license/)
+- [China Road Signs](https://www.rhinocarhire.com/Drive-Smart-Blog/Drive-Smart-China/China-Road-Signs.aspx)
