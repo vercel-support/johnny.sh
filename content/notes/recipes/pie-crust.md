@@ -4,8 +4,8 @@ WIP - stealing from [here](https://www.simplyrecipes.com/recipes/perfect_pie_cru
 
 ### Ingredients
 
-* 2 1/2 cups all-purpose flour, plus extra for rolling
-* 1 cup (2 sticks or 8 ounces) unsalted butter, very-cold, cut into 1/2 inch cubes
+* 2 1/2 cups (324 grams) all-purpose flour, plus extra for rolling
+* 1 cup (2 sticks or 8 ounces, or 227 grams) unsalted butter, very-cold, cut into 1/2 inch cubes
 * 1 teaspoon salt
 * 1 teaspoon sugar
 * 6 to 8 tablespoons ice water

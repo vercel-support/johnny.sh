@@ -4,7 +4,7 @@ Stolen, from elsewhere. Havent' tried this yet.
 
 ### Ingredients
 
-* 1 recipe pastry for a 9 inch double crust pie (see [my pie crust interpretation](./pie-crust))
+* 1 recipe pastry for a 9 inch double crust pie (see [my pie crust interpretation](../pie-crust))
 * 0.5 cup unsalted butter
 * 3 tablespoons all-purpose flour
 * 0.25 cup water
