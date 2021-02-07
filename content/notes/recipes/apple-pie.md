@@ -5,11 +5,11 @@ Stolen, from elsewhere. Havent' tried this yet.
 ### Ingredients
 
 * 1 recipe pastry for a 9 inch double crust pie (see [my pie crust interpretation](../pie-crust))
-* 0.5 cup unsalted butter
+* 0.5 cup (113g) unsalted butter
 * 3 tablespoons all-purpose flour
 * 0.25 cup water
-* 0.5 cup white sugar
-* 0.5 cup packed brown sugar
+* 0.5 cup (75g) white sugar
+* 0.5 cup (75g) packed brown sugar
 * 8 Granny Smith apples
 * 1.5 tsp cinnamon
 
