@@ -2,6 +2,8 @@
 
 Stolen, from elsewhere. Havent' tried this yet.
 
+Note: research [this recipe](https://www.simplyrecipes.com/recipes/old_fashioned_apple_pie/)
+
 ### Ingredients
 
 * 1 recipe pastry for a 9 inch double crust pie (see [my pie crust interpretation](../pie-crust))
