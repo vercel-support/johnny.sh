@@ -1,7 +1,7 @@
 ---
 title: The problem with React Context
 date: "2020-10-22T15:24:00.603Z"
-visual: '../images/context.jpg'
+visual: '../images/context.png'
 description: 'Or: why Redux is not dead, yet.'
 ---
 
@@ -23,9 +23,9 @@ Here's a common example.
 
 
 ```javascript
-import { createContext, useContext, useReducer } from 'react'
+import { createContext, useContext, useReducer } from 'react';
 
-const reducer = (prev, next) => ({...prev, ...next})
+const reducer = (prev, next) => ({...prev, ...next});
 
 const StoreContext = createContext();
 
@@ -42,7 +42,7 @@ const initialState = {
 
 export const GlobalStoreProvider = ({ children }) => {
   
-  const [globalState, dispatch] = useReducer(reducer, initialState)
+  const [globalState, dispatch] = useReducer(reducer, initialState);
 
   return (
     <StoreContext.Provider value={{globalState, dispatch}}>
@@ -64,7 +64,7 @@ From the above example, if I have a component which uses `globalState.user`, and
 This is why the Redux hooks API exposes this weird [`isEqual`](https://react-redux.js.org/api/hooks) function as the second argument -- it's for memoizing, allowing the developer to manually judge if a re-render is needed. 
 
 ```javascript
-const result = useSelector(selector, equalityFn)
+const result = useSelector(selector, equalityFn);
 ```
 
 The whole idea behind an `isEqual` function existing in React code is [controversial](https://gist.github.com/sebmarkbage/a5ef436427437a98408672108df01919), and maybe a sign that the whole abstraction is falling apart. We're worrying about the engine when we should be focused on driving the car - [best Stack Overflow answer ever](https://stackoverflow.com/questions/3883006/meaning-of-leaky-abstraction). Keep your eyes on the road!

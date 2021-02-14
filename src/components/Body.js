@@ -30,14 +30,14 @@ const Body = ({ children, ...rest }) => (
         fontFamily: 'monospace',
         fontSize: 1,
         color: 'inherit',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         bg: 'muted',
         p: '2px 10px',
       },
       '& kbd': {
         bg: 'muted',
         border: '1px solid #d1d5da',
-        borderRadiuys: '6px',
+        borderRadius: '6px',
       },
     }}
   >
