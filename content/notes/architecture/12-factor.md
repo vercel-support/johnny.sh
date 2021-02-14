@@ -41,4 +41,44 @@ You should be able to swap out any backing service at any time by simply changin
 
 ### V. Build, release, run
 
-TODO: the rest
+A **codebase** is transformed into a **deploy** through three steps. 
+
+1. Build - pull codebase at a certain commit hash; pull dependencies, build to executable.
+2. Release - takes the build, combines it with a **config**, ready for execution.
+3. Run - runs the app in the execution environment, by launching some set of the app’s processes against a selected release.
+
+```
+build
+  codebase + dependencies -> executable
+release
+  build output + config
+run
+  release + runtime
+```
+
+The twelve-factor app uses strict separation between the build, release, and run stages. For example, it is impossible to make changes to the code at runtime, since there is no way to propagate those changes back to the build stage.
+
+
+### VI. Processes
+
+The app is executed in the execution environment as one or more *processes*.
+
+**Twelve-factor processes are stateless and share-nothing.** Any data that needs to persist must be stored in a stateful backing service, typically a database.
+
+Regarding the stateless bit -- a deploy is disposable, nothing should be shared between two deploys. A deploy can utilize the file system for some one-off computations, but it shouldn't expect that the file system is persisted between deploys.
+
+Also, in-memory session management is a violation of 12 factor arch.
+
+### VII. Port binding
+
+**The twelve-factor app is completely self-contained** and does not rely on runtime injection of a webserver into the execution environment to create a web-facing service. The web app exports HTTP as a service by binding to a port, and listening to requests coming in on that port.
+
+AKA, some kind of web server or gateway is **not** an expectation of the environment that the app implicitly relies on. Instead, the app should include a web server of some kind as a dependency, or as part of its own logic. 
+
+The app exposes a service bound to a port, simply put.
+
+Note also that the port-binding approach means that one app can become the backing service for another app, by providing the URL to the backing app as a resource handle in the config for the consuming app.
+
+### VIII. Concurrency
+
+TODO
