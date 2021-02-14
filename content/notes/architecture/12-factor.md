@@ -81,4 +81,33 @@ Note also that the port-binding approach means that one app can become the backi
 
 ### VIII. Concurrency
 
+In some systems, processes are kind of abstracted into the background. The twelve factor app does not take this approach - **processes are first class citizens to the app**.
+
+Some of this philosophy is strongly informed by [unix process model for running service daemons.](https://adam.herokuapp.com/past/2011/5/9/applying_the_unix_process_model_to_web_apps/)
+
+There are *process types*. Http requests are handled by a web process. Background jobs are handled by a worker process, so on so forth.
+
+How is this different from point 6 (Processes)? With *process types* we can scale out our app infinitely, in theory. If processes are stateless, and share nothing, that means multiple of the same *process type* can be running at the same time, without influencing eachother.
+
+This is how we scale vertically to handle concurrency and huge amount of data/requests/computation in the twelve factor app.
+
+### IX. Disposability
+
+Building on how the process model allows us to do concurrency, **processes are disposable** -- there can be 0-n of a process type running at the same time. 
+
+Other benefits of disposable processes:
+* fast scaling
+* rapid deployment of config/code changes
+* robustness of prod deploys
+
+Also, processes should start quickly and exit gracefully. If a `SIGTERM` event is received, the process should finish any requests or operations it's currently executing, then exit gracefully.
+
+For a worker process, graceful shutdown is achieved by returning the current job to the work queue. 
+
+Processes should also be **robust against sudden death**, in the case of a failure in the underlying hardware.
+
+One might also implement graceful process disposability by having all operations by [idempotent](https://en.wikipedia.org/wiki/Idempotence) - e.g., if it happens again after it dies, or is already running, then it's okay. Another approach, although tricky, is [Crash Only Design](https://lwn.net/Articles/191059/).
+
+### X. Dev/prod parity
+
 TODO
