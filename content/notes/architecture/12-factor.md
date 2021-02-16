@@ -110,4 +110,27 @@ One might also implement graceful process disposability by having all operations
 
 ### X. Dev/prod parity
 
-TODO
+The twelve factor app promotes that development environments should be extremely close to the production environment, because this makes continuous integration possible. Eliminate differences in tooling, enviornment, operating system, etc. if possible.
+
+This is kind of the whole "devops" philosophy, at least how it was in its origin. The same people who develop the code, deploy the code. The developers deploy.
+
+Also, nowadays there's really no reason to use "lightweight" versions of backing services in dev mode, use homebrew dude. Also -- pay attention to versioning, all deploys of the app (developer environments, staging, production) should be using the same type and version of each of the backing services.
+
+### XI. Logs
+
+Logs should be treated as an event stream. Even though they are thought of and modeled after a "log file" on the file system, they should be aggregated to a separate service.
+Logs are a time-ordered stream of events of activity on a server. One log = one line.
+
+Anyways, the storage/file/management of logs should **not** be considered directly by an individual process of the twelve factor app directly. The app should simply stream the logs to `stdout`. In development, the developer will see this in their terminal. In a deploy, on the other hand, the `stdout` will be captured by the execution environment. The execution environment should collate the logs from other processes in the app, and send them off to a log aggregation service of some kind for long-term viewing/archiving.
+
+### XII. Admin processes
+
+This refers to scripts, one-off "admin" scripts which need to be manually executed. Such as database migrations, data export, cleanup, seeding, etc.
+
+A few things about scripts:
+
+* Scripts should be run in an execution environment, against a specific **release** of the app.
+* They should use the same config and codebase as any processes that run against that release
+* Scripts should be checked into the codebase version control, to avoid synchronization issues.
+
+All of the same principals mentioned above (dependency isolation, process formation, etc.) also applies to admin scripts.
