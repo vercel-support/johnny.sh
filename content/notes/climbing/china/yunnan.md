@@ -1,4 +1,4 @@
-## Kunming
+# Kunming
 There's a ton of climbing in/around Kunming. Most of the information online is dependable, a good reference is [Kunming Rock](http://kunmingrock.com/).
 
 For accomodations, you can pretty much stay in Kunming and rent a car or take cabs/didi to the various crags in the area.
