@@ -12,7 +12,8 @@ While I haven't ever shipped a desktop app to production, I've been fiddling wit
 * [graffiti](https://github.com/cztomsik/graffiti)
 * [NW.js](https://nwjs.io/)
 * [revery](https://github.com/revery-ui/revery) - not necessarily using frontend tech/Javascript, but is designed to be easy for JS devs to use. Super performant next-gen shit.
-* [Tauri](https://tauri.studio/en/)
+* [Tauri](https://tauri.studio/en/) - Uses rust.
 * [sciter](https://sciter.com/) - no idea how it works, but is extremely lightweight when compared with electron. [example app](https://github.com/GirkovArpa/clipper-sciter)
+* [Neutralino](https://github.com/neutralinojs/neutralinojs) - also uses system browser.
 
 Side note: guide to distributing mac apps outside the app store - [link](https://rambo.codes/posts/2021-01-08-distributing-mac-apps-outside-the-app-store).
