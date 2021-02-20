@@ -23,3 +23,4 @@ A general amalgamation of interesting codebases to steal from or use as starters
 - [feednext](https://github.com/feednext/feednext)
 - [NextJS + Nest JS](https://github.com/tomanagle/NextJS-NestJS-GraphQL-Starter) with Google Oauth, React Hook Form, everything.
 - [mydrive](https://github.com/subnub/myDrive) - very full-featured React frontend, typescript backend.
+- [Mooz](https://github.com/muzam1l/mooz) - web rtc video chat, built on react + Recoil + Socket.io. 
