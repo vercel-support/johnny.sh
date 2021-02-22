@@ -12,6 +12,7 @@ Notes on architecture.
 * [Soundcloud Backend for Frontend (BFF) pattern](https://www.thoughtworks.com/de/insights/blog/bff-soundcloud)
 * [Simple Graph QL, without Apollo (with lots of good examples)](https://httptoolkit.tech/blog/simple-graphql-server-without-apollo)
 * [Microsoft Guidelines for REST](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
+* [Best Practices for Rest API Design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 * [Flareact - server-rendered React on cloudflare edge node workers](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
 * [NestJS + Dynamo DB + Serverless](https://medium.com/javascript-in-plain-english/serverless-nestjs-with-aws-dynamodb-e7530ab33c78)
 * [The 12 factor App](https://12factor.net/) - my notes [here](./12-factor)
