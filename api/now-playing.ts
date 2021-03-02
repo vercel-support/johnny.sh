@@ -1,8 +1,10 @@
+import { NowRequest, NowResponse } from '@vercel/node';
 import querystring from 'querystring';
 import fetch from 'node-fetch';
 
-const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
-const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
+const NOW_PLAYING_ENDPOINT =
+  'https://api.spotify.com/v1/me/player/currently-playing';
+const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 
 const {
   SPOTIFY_CLIENT_ID: client_id,
@@ -36,4 +38,10 @@ export const getNowPlaying = async () => {
       Authorization: `Bearer ${access_token}`,
     },
   });
+};
+
+export default async (request: NowRequest, response: NowResponse) => {
+  const res = await getNowPlaying();
+  const json = await res.json();
+  response.status(200).json(json);
 };
