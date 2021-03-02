@@ -1,5 +1,5 @@
 const querystring = require('querystring');
-const axios = require('axios');
+const fetch = require('node-fetch');
 
 const NOW_PLAYING_ENDPOINT =
   'https://api.spotify.com/v1/me/player/currently-playing';
@@ -14,12 +14,13 @@ const {
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
 const getAccessToken = async () => {
-  const response = await axios.post(TOKEN_ENDPOINT, {
+  const response = await fetch(TOKEN_ENDPOINT, {
+    method: 'POST',
     headers: {
       Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
-    data: querystring.stringify({
+    body: querystring.stringify({
       grant_type: 'refresh_token',
       refresh_token,
     }),
@@ -31,7 +32,7 @@ const getAccessToken = async () => {
 const getNowPlaying = async () => {
   const { access_token } = await getAccessToken();
 
-  return axios.get(NOW_PLAYING_ENDPOINT, {
+  return fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
