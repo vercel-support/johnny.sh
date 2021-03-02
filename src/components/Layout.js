@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from 'theme-ui';
 import { PostLink, SubtleLink } from './Link';
+import { SpotifyNowPlaying } from './Spotify';
 
 const modes = ['default', 'dark', 'deep', 'swiss'];
 
@@ -118,6 +119,7 @@ const Layout = (props) => {
           © {new Date().getFullYear()}{' '}
         </small>
       </footer>
+      <SpotifyNowPlaying />
     </div>
   );
 };
