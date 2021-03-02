@@ -1,6 +1,6 @@
 import { NowRequest, NowResponse } from '@vercel/node';
 import querystring from 'querystring';
-import fetch from 'node-fetch';
+import _fetch from 'node-fetch';
 
 const NOW_PLAYING_ENDPOINT =
   'https://api.spotify.com/v1/me/player/currently-playing';
@@ -15,7 +15,7 @@ const {
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
 export const getAccessToken = async () => {
-  const response = await fetch(TOKEN_ENDPOINT, {
+  const response = await _fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
       Authorization: `Basic ${basic}`,
@@ -33,7 +33,7 @@ export const getAccessToken = async () => {
 export const getNowPlaying = async () => {
   const { access_token } = await getAccessToken();
 
-  return fetch(NOW_PLAYING_ENDPOINT, {
+  return _fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
