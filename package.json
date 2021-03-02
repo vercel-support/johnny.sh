@@ -11,6 +11,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@vercel/node": "^1.9.0",
     "axios": "^0.21.1",
     "gatsby": "^2.23.20",
