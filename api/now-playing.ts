@@ -14,7 +14,7 @@ const {
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
-const getAccessToken = async () => {
+export const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
@@ -40,8 +40,31 @@ export const getNowPlaying = async () => {
   });
 };
 
-export default async (request: NowRequest, response: NowResponse) => {
-  const res = await getNowPlaying();
-  const json = await res.json();
-  response.status(200).json(json);
+export default async (req: NowRequest, res: NowResponse) => {
+  const nowPlaying = await getNowPlaying();
+
+  if (nowPlaying.status === 204 || nowPlaying.status > 400) {
+    return res.status(204);
+  }
+  const json = await nowPlaying.json();
+  const isPlaying = json?.is_playing;
+  const title = json?.item.name;
+  const artist = json?.item.artists.map((_artist) => _artist.name).join(', ');
+  const album = json?.item.album.name;
+  const albumImageUrl = json?.item.album.images[0].url;
+  const songUrl = json?.item.external_urls.spotify;
+
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=60, stale-while-revalidate=30'
+  );
+
+  return res.status(200).json({
+    album,
+    albumImageUrl,
+    artist,
+    isPlaying,
+    songUrl,
+    title,
+  });
 };

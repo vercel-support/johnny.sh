@@ -25,5 +25,5 @@ export const SpotifyNowPlaying = () => {
   }, []);
 
   useInterval(fetchCurrentSong, REFETCH_INTERVAL);
-  return <div>now playing</div>;
+  return <div></div>;
 };
