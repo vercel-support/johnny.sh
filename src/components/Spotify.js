@@ -8,6 +8,7 @@ const REFETCH_INTERVAL = 30000;
 const NOW_PLAYING_URL = `${API_BASE_URL}/api/now-playing`;
 
 export const SpotifyNowPlaying = () => {
+  const [hasInitialFetched, setHasInitialFetched] = useState(false);
   const [currentSong, setCurrentSong] = useState();
   const [isLoading, setIsloading] = useState(false);
 
@@ -21,9 +22,38 @@ export const SpotifyNowPlaying = () => {
   };
 
   useEffect(() => {
-    fetchCurrentSong();
+    const initialFetch = async () => {
+      try {
+        await fetchCurrentSong();
+      } catch (error) {
+        console.log(error); //eslint-disable-line
+      }
+      setHasInitialFetched(true);
+    };
+    initialFetch();
   }, []);
 
   useInterval(fetchCurrentSong, REFETCH_INTERVAL);
-  return <div></div>;
+  return (
+    <div>
+      {!hasInitialFetched && <div>loading...</div>}
+      {currentSong && currentSong.isPlaying && (
+        <div>
+          <div sx={{ display: 'flex' }}>
+            <div>
+              <img
+                sx={{ height: '100px', width: '100px' }}
+                src={currentSong.albumImageUrl}
+                alt={`Album artwork for ${currentSong.title} by ${currentSong.artist}`}
+              ></img>
+              <div sx={{ fontWeight: 'bold', fontSize: '12px' }}>
+                {currentSong.title}
+              </div>
+              <div sx={{ fontSize: '10px' }}>{currentSong.artist}</div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
