@@ -14,7 +14,7 @@ const {
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
-export const getAccessToken = async () => {
+const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
@@ -30,7 +30,7 @@ export const getAccessToken = async () => {
   return response.json();
 };
 
-export const getNowPlaying = async () => {
+const getNowPlaying = async () => {
   const { access_token } = await getAccessToken();
 
   return fetch(NOW_PLAYING_ENDPOINT, {
