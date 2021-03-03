@@ -5,7 +5,7 @@ import useInterval from '../hooks/useInterval';
 
 const API_BASE_URL = process.env.API_BASE_URL || '';
 const REFETCH_INTERVAL = 30000;
-const NOW_PLAYING_URL = `${API_BASE_URL}/api/now-playing`;
+const NOW_PLAYING_URL = `${API_BASE_URL}/api/currently-playing`;
 
 export const SpotifyNowPlaying = () => {
   const [hasInitialFetched, setHasInitialFetched] = useState(false);
